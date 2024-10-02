@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:backgroundTint="@color/white"
+    android:outlineSpotShadowColor="@color/black"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardElevation="@dimen/_2sdp"
+    app:cardMaxElevation="@dimen/_2sdp"
+    app:cardPreventCornerOverlap="false">
+
+    <LinearLayout
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/sentTo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:fontFamily="@font/inter_semibold"
+            android:gravity="start"
+            android:autoSizeTextType="uniform"
+            android:maxLines="3"
+            android:autoSizeMaxTextSize="@dimen/_13sdp"
+            android:autoSizeMinTextSize="@dimen/_10sdp"
+            android:text="Sent to NGO NAME"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/method"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:fontFamily="@font/inter_semibold"
+                android:gravity="start"
+                android:text="method"
+                android:autoSizeMinTextSize="@dimen/_8sdp"
+                android:autoSizeMaxTextSize="@dimen/_10sdp"
+                android:autoSizeTextType="uniform"
+                android:maxLines="2"
+                android:textColor="@color/gray_font"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/amount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_semibold"
+                android:gravity="end"
+                android:text="₹ 12,000"
+                android:textColor="@color/status_color"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck,TextContrastCheck" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/dateTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:fontFamily="@font/inter_semibold"
+                android:gravity="start"
+                android:text="wednesday,12 feb 2003"
+                android:textColor="@color/gray_font"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:fontFamily="@font/inter_semibold"
+                android:gravity="end"
+                android:text="Success"
+                android:textColor="@color/success"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck,TextContrastCheck" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/transactionId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:fontFamily="@font/inter_regular"
+            android:gravity="start"
+            android:text="transactoin id"
+            android:textColor="@color/gray_font"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

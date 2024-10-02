@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/toolbar_BG"
+    android:orientation="vertical"
+    tools:context=".User_Package.user_DashBoard.Update_Profile_Screen">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/inter_semibold"
+            android:gravity="center"
+            android:text="Update Profile"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sdp"
+            tools:ignore="HardcodedText,TextSizeCheck,TouchTargetSizeCheck" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            tools:ignore="SpeakableTextPresentCheck">
+
+
+            <LinearLayout
+                android:id="@+id/update_parentLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/BTN_back"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="start"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:backgroundTint="@color/status_color"
+                    android:src="@drawable/round_arrow_back_24"
+                    app:fabCustomSize="@dimen/_30sdp"
+                    app:fabSize="mini"
+                    app:tint="@color/white"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_5sdp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        app:shapeAppearanceOverlay="@style/TopRoundedCorner" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:fontFamily="@font/inter_medium"
+                            android:gravity="center"
+                            android:paddingHorizontal="@dimen/_20sdp"
+                            android:text="You can update your personal details."
+                            android:textColor="@color/status_color"
+                            android:textSize="@dimen/_10sdp"
+                            tools:ignore="TextSizeCheck" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:layout_marginHorizontal="@dimen/_30sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:background="@color/status_color" />
+
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/img_updatep_photo"
+                            android:layout_width="@dimen/_90sdp"
+                            android:layout_height="@dimen/_90sdp"
+                            android:layout_gravity="center"
+                            android:padding="3dp"
+                            android:scaleType="centerCrop"
+                            app:shapeAppearanceOverlay="@style/Circular"
+                            app:srcCompat="@drawable/profile_img_icon_foreground"
+                            app:strokeColor="@color/toolbar_BG_D"
+                            app:strokeWidth="2dp" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/txt_updatep_change"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|center"
+                            android:clickable="true"
+                            android:drawableStart="@drawable/round_edit_24"
+                            android:drawableTint="@color/status_color"
+                            android:focusable="true"
+                            android:fontFamily="@font/inter_semibold"
+                            android:gravity="center"
+                            android:lineSpacingExtra="@dimen/_5sdp"
+                            android:text="Change Profile Photo"
+                            android:textColor="@color/status_color"
+                            android:textSize="@dimen/_10sdp"
+                            tools:ignore="TextSizeCheck,TouchTargetSizeCheck" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="@dimen/_270sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|center"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:fontFamily="@font/inter_regular"
+                            android:gravity="center"
+                            android:lineSpacingExtra="@dimen/_5sdp"
+                            android:text="Your personal details"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            tools:ignore="TextSizeCheck" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+
+                            android:layout_width="@dimen/_250sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:hint="First Name"
+                            app:boxStrokeColor="@color/toolbar_BG"
+                            app:boxStrokeErrorColor="@color/err_color"
+                            app:cursorColor="@color/black"
+                            app:cursorErrorColor="@color/err_color"
+                            app:hintTextColor="@color/toolbar_BG"
+                            app:prefixTextColor="@color/black"
+                            tools:ignore="HardcodedText">
+
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/txt_updatep_Fname"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif"
+                                android:inputType="textAutoComplete"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_13sdp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+
+                            android:layout_width="@dimen/_250sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:hint="Last Name"
+                            app:boxStrokeColor="@color/toolbar_BG"
+                            app:boxStrokeErrorColor="@color/err_color"
+                            app:cursorColor="@color/black"
+                            app:cursorErrorColor="@color/err_color"
+                            app:hintTextColor="@color/toolbar_BG"
+                            app:prefixTextColor="@color/black"
+                            tools:ignore="HardcodedText">
+
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/txt_updatep_Lname"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif"
+                                android:inputType="textAutoComplete"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_13sdp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+
+                            android:layout_width="@dimen/_250sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:hint="Email"
+                            app:boxStrokeColor="@color/toolbar_BG"
+                            app:boxStrokeErrorColor="@color/err_color"
+                            app:cursorColor="@color/black"
+                            app:cursorErrorColor="@color/err_color"
+                            app:hintTextColor="@color/toolbar_BG"
+                            app:prefixTextColor="@color/black"
+                            tools:ignore="HardcodedText">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/txt_updatep_email"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif"
+                                android:inputType="textEmailAddress"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_13sdp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+
+                            android:layout_width="@dimen/_250sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:hint="Mobile No."
+                            app:boxStrokeColor="@color/toolbar_BG"
+                            app:boxStrokeErrorColor="@color/err_color"
+                            app:cursorColor="@color/black"
+                            app:cursorErrorColor="@color/err_color"
+                            app:hintTextColor="@color/toolbar_BG"
+                            tools:ignore="HardcodedText">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/txt_updatep_mno"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:enabled="false"
+                                android:fontFamily="sans-serif"
+                                android:inputType="phone"
+                                android:maxLength="13"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_13sdp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+
+                            android:layout_width="@dimen/_250sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:hint="Date of Birth"
+                            app:boxStrokeColor="@color/toolbar_BG"
+                            app:boxStrokeErrorColor="@color/err_color"
+                            app:cursorColor="@color/black"
+                            app:cursorErrorColor="@color/err_color"
+                            app:helperTextTextColor="@color/black"
+                            app:hintTextColor="@color/toolbar_BG"
+                            app:prefixTextColor="@color/black"
+                            tools:ignore="HardcodedText">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/txt_updatep_dob"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:cursorVisible="false"
+                                android:focusable="false"
+                                android:focusableInTouchMode="true"
+                                android:fontFamily="sans-serif"
+                                android:inputType="none"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_13sdp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/txtlayout_updatep_pwd"
+                            android:layout_width="@dimen/_250sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:hint="Enter Password"
+                            app:boxStrokeColor="@color/toolbar_BG"
+                            app:boxStrokeErrorColor="@color/err_color"
+                            app:cursorColor="@color/black"
+                            app:cursorErrorColor="@color/err_color"
+                            app:endIconMode="password_toggle"
+                            app:endIconTint="@color/status_color"
+                            app:hintTextColor="@color/toolbar_BG"
+                            app:prefixTextColor="@color/black"
+                            tools:ignore="HardcodedText">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/txt_updatep_pwd"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:enabled="false"
+                                android:focusable="false"
+                                android:fontFamily="sans-serif"
+                                android:inputType="textPassword"
+                                android:maxLength="12"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_13sdp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="@dimen/_250sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:clickable="true"
+                            android:gravity="end"
+                            android:onClick="reset_pwd_screen"
+                            android:text="@string/reset_pwd"
+                            android:textColor="@color/toolbar_BG"
+                            android:textColorLink="@color/toolbar_BG"
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="bold"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TextSizeCheck" />
+
+
+
+
+                        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                            android:id="@+id/BTN_updatep_update"
+                            android:layout_width="@dimen/_140sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_30sdp"
+                            android:layout_marginBottom="@dimen/_30sdp"
+                            android:backgroundTint="@color/toolbar_BG"
+                            android:gravity="center"
+                            android:text="Update"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_15sdp"
+                            app:shapeAppearanceOverlay="@style/Circular"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+</LinearLayout>

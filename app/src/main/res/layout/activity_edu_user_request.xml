@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:ignore="SpeakableTextPresentCheck"
+    tools:context=".User_Package.Education_Section.Edu_User_Request">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linear_layout_food"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/BTN_edu_req_back"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:backgroundTint="@color/edu_donation"
+                android:src="@drawable/round_arrow_back_24"
+                app:fabCustomSize="@dimen/_30sdp"
+                app:fabSize="mini"
+                app:tint="@color/white"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|start"
+                android:fontFamily="@font/kanit_medium"
+                android:text="Add Request"
+                android:layout_marginRight="@dimen/_75sdp"
+                android:textColor="@color/edu_donation"
+                android:textSize="@dimen/_20sdp" />
+
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/chk_ex_edu_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|right"
+                android:checked="false"
+                android:button="@drawable/custom_checkbox"
+                app:buttonTint="@color/edu_donation"
+                android:fontFamily="@font/kanit_medium"
+                android:text="Existing User"
+                android:textColor="@color/edu_donation"
+                />
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:hint="Enter Full Name"
+                    app:boxStrokeColor="@color/edu_donation"
+                    app:boxStrokeErrorColor="@color/err_color"
+                    app:cursorColor="@color/edu_donation"
+                    app:boxCornerRadiusBottomStart="@dimen/_15sdp"
+                    app:boxCornerRadiusBottomEnd="@dimen/_15sdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_15sdp"
+                    app:boxCornerRadiusTopStart="@dimen/_15sdp"
+                    android:textColorHint="#49454F"
+                    app:hintTextColor="@color/edu_donation"
+                    tools:ignore="HardcodedText">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txt_edu_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:inputType="textAutoComplete"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13sdp"
+                        android:textStyle="bold"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:hint="Enter Mobile No."
+                    app:boxStrokeColor="@color/edu_donation"
+                    app:boxStrokeErrorColor="@color/err_color"
+                    app:cursorColor="@color/edu_donation"
+                    app:boxCornerRadiusBottomStart="@dimen/_15sdp"
+                    app:boxCornerRadiusBottomEnd="@dimen/_15sdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_15sdp"
+                    app:boxCornerRadiusTopStart="@dimen/_15sdp"
+                    app:cursorErrorColor="@color/err_color"
+                    app:hintTextColor="@color/edu_donation"
+                    android:textColorHint="#49454F"
+                    app:prefixTextColor="@color/edu_donation"
+                    tools:ignore="HardcodedText">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txt_edu_mno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:inputType="phone"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13sdp"
+                        android:textStyle="bold"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:hint="Enter Mobile No.(Optional)"
+                    app:boxStrokeColor="@color/edu_donation"
+                    app:boxStrokeErrorColor="@color/err_color"
+                    app:cursorColor="@color/edu_donation"
+                    app:boxCornerRadiusBottomStart="@dimen/_15sdp"
+                    app:boxCornerRadiusBottomEnd="@dimen/_15sdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_15sdp"
+                    app:boxCornerRadiusTopStart="@dimen/_15sdp"
+                    app:cursorErrorColor="@color/err_color"
+                    app:hintTextColor="@color/edu_donation"
+                    android:textColorHint="#49454F"
+                    app:prefixTextColor="@color/edu_donation"
+                    tools:ignore="HardcodedText">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txt_edu_mno_other"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:inputType="phone"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13sdp"
+                        android:textStyle="bold"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:hint="Enter Email"
+                    app:boxStrokeColor="@color/edu_donation"
+                    app:cursorColor="@color/edu_donation"
+                    app:boxCornerRadiusBottomStart="@dimen/_15sdp"
+                    app:boxCornerRadiusBottomEnd="@dimen/_15sdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_15sdp"
+                    app:boxCornerRadiusTopStart="@dimen/_15sdp"
+                    app:hintTextColor="@color/edu_donation"
+                    app:prefixTextColor="@color/edu_donation"
+                    android:textColorHint="#49454F"
+                    tools:ignore="HardcodedText">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txt_edu_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13sdp"
+                        android:textStyle="bold"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/txt_edu_getlocation"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        app:itemIconSize="@dimen/_100sdp"
+                        android:tint="@color/edu_donation"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.489"
+                        app:srcCompat="@drawable/b_location" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputLayout3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Your Address"
+                        app:boxCornerRadiusBottomEnd="@dimen/_15sdp"
+                        app:boxCornerRadiusBottomStart="@dimen/_15sdp"
+                        app:boxCornerRadiusTopEnd="@dimen/_15sdp"
+                        app:boxCornerRadiusTopStart="@dimen/_15sdp"
+                        app:boxStrokeColor="@color/edu_donation"
+                        app:cursorColor="@color/edu_donation"
+                        app:hintTextColor="@color/edu_donation"
+                        android:textColorHint="#49454F"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/txt_edu_getlocation"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:prefixTextColor="@color/black"
+                        tools:ignore="HardcodedText,MissingConstraints">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/txt_edu_location"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:inputType="textImeMultiLine"
+                            android:lines="3"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="bold" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:hint="Enter Stationary Details"
+                    app:placeholderText="e.g. about stationaries and its quantity"
+                    app:boxStrokeColor="@color/edu_donation"
+                    app:cursorColor="@color/edu_donation"
+                    app:hintTextColor="@color/edu_donation"
+                    app:prefixTextColor="@color/edu_donation"
+                    tools:ignore="HardcodedText"
+                    app:boxCornerRadiusBottomStart="@dimen/_15sdp"
+                    android:textColorHint="#49454F"
+                    app:boxCornerRadiusBottomEnd="@dimen/_15sdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_15sdp"
+                    app:boxCornerRadiusTopStart="@dimen/_15sdp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txt_edu_note"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:inputType="textMultiLine"
+                        android:lines="3"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13sdp"
+                        android:textStyle="bold"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+
+
+
+            <Button
+                android:id="@+id/BTN_add"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="ADD"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/edu_donation"
+                android:layout_marginTop="@dimen/_25sdp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

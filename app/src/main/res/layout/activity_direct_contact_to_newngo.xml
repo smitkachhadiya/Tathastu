@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/other_ngo"
+    android:orientation="vertical"
+    tools:context=".User_Package.user_NGO_list.New_NGO_list.direct_contact_to_new_NGO">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/inter_semibold"
+            android:gravity="center"
+            android:text="New NGOs' Details"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp"
+            tools:ignore="HardcodedText,TextSizeCheck,TouchTargetSizeCheck" />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/BTN_back"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="start"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:backgroundTint="@color/other_ngo"
+                    android:src="@drawable/round_arrow_back_24"
+                    app:fabCustomSize="@dimen/_30sdp"
+                    app:fabSize="mini"
+                    app:tint="@color/white"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        app:shapeAppearanceOverlay="@style/TopRoundedCorner" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center"
+                            android:fontFamily="@font/inter_medium"
+                            android:paddingHorizontal="@dimen/_20sdp"
+                            android:text="There are some NGOs' Details for your help,you can call on that number by clicking on the number and also more details about the NGO where you can see the details of NGO : "
+                            android:layout_marginBottom="@dimen/_1sdp"
+                            android:textColor="@color/other_ngo"
+                            android:textSize="@dimen/_10sdp"
+                            tools:ignore="TextSizeCheck" />
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center"
+                            android:fontFamily="@font/inter_medium"
+                            android:paddingHorizontal="@dimen/_10sdp"
+                            android:text="Select Category :"
+                            android:textColor="@color/other_ngo"
+                            android:textSize="@dimen/_10sdp"
+                            tools:ignore="TextSizeCheck" />
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                            android:layout_marginHorizontal="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_3sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:endIconTint="@color/other_ngo"
+                            app:boxBackgroundMode="filled"
+                            app:boxBackgroundColor="@color/textField_Color"
+                            app:boxStrokeColor="@color/other_ngo"
+                            app:expandedHintEnabled="true"
+                            android:clickable="false">
+
+                            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                                android:id="@+id/dropcat"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/other_ngo"
+                                tools:ignore="SpeakableTextPresentCheck"
+                                android:inputType="none"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:background="@color/other_ngo"/>
+
+
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycle_ngo_detail"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="@dimen/_3sdp"
+                            android:paddingBottom="@dimen/_30sdp"
+                            android:clipToPadding="false"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="bottom|center">
+
+                        <View
+                            android:layout_gravity="bottom|center"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:background="@color/other_ngo"/>
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center"
+                            android:paddingVertical="@dimen/_2sdp"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="All NGOs are available in the SURAT city"
+                            android:textColor="@color/other_ngo"
+                            android:textSize="@dimen/_10sdp"
+                            tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

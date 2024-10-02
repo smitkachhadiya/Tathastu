@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/toolbar_BG"
+    android:orientation="vertical"
+    tools:context=".User_Package.user_Common_Screens.Contact_us_Screen">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/inter_semibold"
+                android:gravity="center"
+                android:text="Contact Us"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sdp"
+                tools:ignore="HardcodedText,TextSizeCheck,TouchTargetSizeCheck" />
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            tools:ignore="SpeakableTextPresentCheck">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/BTN_back"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="start"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:backgroundTint="@color/status_color"
+                    android:src="@drawable/round_arrow_back_24"
+                    app:fabCustomSize="@dimen/_30sdp"
+                    app:fabSize="mini"
+                    app:tint="@color/white"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        app:shapeAppearanceOverlay="@style/TopRoundedCorner" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:outlineSpotShadowColor="@color/status_color"
+                            app:cardCornerRadius="@dimen/_10sdp"
+                            app:cardElevation="@dimen/_5sdp"
+                            app:cardMaxElevation="@dimen/_8sdp"
+                            app:cardPreventCornerOverlap="false">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:orientation="vertical"
+                                android:paddingVertical="@dimen/_5sdp">
+
+                                <com.google.android.material.imageview.ShapeableImageView
+                                    android:layout_width="@dimen/_80sdp"
+                                    android:layout_height="@dimen/_80sdp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/shadow_rec_white"
+                                    android:elevation="@dimen/_10sdp"
+                                    android:padding="@dimen/_3sdp"
+                                    app:shapeAppearanceOverlay="@style/RoundedSquare"
+                                    app:srcCompat="@drawable/icon_app" />
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/kanit_medium"
+                                    android:text="@string/app_name"
+                                    android:textColor="@color/status_color"
+                                    android:textSize="@dimen/_13sdp" />
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/inter_medium"
+                                    android:text="@string/app_slogan"
+                                    android:textColor="@color/toolbar_BG_D"
+                                    android:textSize="@dimen/_8sdp"
+                                    tools:ignore="TextSizeCheck" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:orientation="vertical"
+                            android:paddingVertical="@dimen/_5sdp">
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:fontFamily="@font/kanit_medium"
+                                android:text="Help Center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_15sdp" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="@dimen/_15sdp"
+                                android:fontFamily="@font/inter_medium"
+                                android:gravity="center"
+                                android:text="Have questions or need assistance with our donation app? Contact us for prompt support on contributions, app usage, or collaboration opportunities. Let's work together to create meaningful impact through your generous donations."
+                                android:textColor="@color/gray_font"
+                                android:textSize="@dimen/_10sdp"
+                                tools:ignore="TextSizeCheck" />
+
+
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginHorizontal="@dimen/_20sdp"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:backgroundTint="@color/white"
+                                android:outlineSpotShadowColor="@color/black"
+                                app:cardCornerRadius="@dimen/_2sdp"
+                                app:cardElevation="@dimen/_5sdp"
+                                app:cardMaxElevation="@dimen/_8sdp"
+                                app:cardPreventCornerOverlap="false">
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:id="@+id/txt_contact_mno"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:drawableStart="@drawable/round_phone_24"
+                                    android:drawableEnd="@drawable/baseline_content_copy_24"
+                                    android:fontFamily="@font/inter_medium"
+                                    android:gravity="center"
+                                    android:padding="@dimen/_5sdp"
+                                    android:text="+910123456789"
+                                    android:textColor="@color/status_color"
+                                    android:textSize="@dimen/_12sdp"
+                                    app:drawableTint="@color/toolbar_BG"
+                                    tools:ignore="TextSizeCheck" />
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:backgroundTint="@color/white"
+                                android:layout_marginHorizontal="@dimen/_20sdp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:outlineSpotShadowColor="@color/black"
+                                app:cardCornerRadius="@dimen/_2sdp"
+                                app:cardElevation="@dimen/_5sdp"
+                                app:cardMaxElevation="@dimen/_8sdp"
+                                app:cardPreventCornerOverlap="false">
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:id="@+id/txt_contact_email"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:drawableStart="@drawable/baseline_alternate_email_24"
+                                    android:drawableEnd="@drawable/baseline_content_copy_24"
+                                    android:fontFamily="@font/inter_medium"
+                                    android:gravity="center"
+                                    android:padding="@dimen/_5sdp"
+                                    android:text="tathastu052threesofficial@gmail.com"
+                                    android:textColor="@color/status_color"
+                                    android:textSize="@dimen/_12sdp"
+                                    app:drawableTint="@color/toolbar_BG"
+                                    tools:ignore="TextSizeCheck" />
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:backgroundTint="@color/white"
+                                android:layout_marginHorizontal="@dimen/_20sdp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:layout_marginBottom="@dimen/_20sdp"
+                                android:outlineSpotShadowColor="@color/black"
+                                app:cardCornerRadius="@dimen/_2sdp"
+                                app:cardElevation="@dimen/_5sdp"
+                                app:cardMaxElevation="@dimen/_8sdp"
+                                app:cardPreventCornerOverlap="false">
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:id="@+id/txt_contact_address"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:drawableStart="@drawable/round_location_on_24"
+                                    android:drawableEnd="@drawable/baseline_content_copy_24"
+                                    android:fontFamily="@font/inter_medium"
+                                    android:gravity="center"
+                                    android:padding="@dimen/_5sdp"
+                                    android:text="123 ABC Street,City Light Area,Surat 395007,Gujarat, India."
+                                    android:textColor="@color/status_color"
+                                    android:textSize="@dimen/_12sdp"
+                                    app:drawableTint="@color/toolbar_BG"
+                                    tools:ignore="TextSizeCheck" />
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/BTN_contact_feedback"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginHorizontal="@dimen/_20sdp"
+                                android:backgroundTint="@color/status_color"
+                                app:cardCornerRadius="@dimen/_5sdp"
+                                app:cardElevation="@dimen/_2sdp"
+                                app:cardMaxElevation="@dimen/_8sdp"
+                                app:cardPreventCornerOverlap="false">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginVertical="@dimen/_10sdp"
+                                    android:orientation="vertical">
+
+                                    <com.google.android.material.textview.MaterialTextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="start|center"
+                                        android:layout_marginHorizontal="@dimen/_5sdp"
+                                        android:drawableEnd="@drawable/round_keyboard_arrow_right_24"
+                                        android:drawableTint="@color/white"
+                                        android:fontFamily="@font/inter_medium"
+                                        android:text="Give Feedback"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_13sdp"
+                                        tools:ignore="TextSizeCheck" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="@dimen/_1sdp"
+                                android:background="@color/toolbar_BG" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/kanit_regular"
+                                android:text=" Follow Us "
+                                android:textColor="@color/toolbar_BG" />
+
+                            <View
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="@dimen/_1sdp"
+                                android:background="@color/toolbar_BG" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                android:id="@+id/BTN_contact_insta"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginHorizontal="@dimen/_10sdp"
+                                android:backgroundTint="@color/white"
+                                android:src="@drawable/ic_instagram"
+                                app:elevation="@dimen/_3sdp"
+                                app:fabCustomSize="@dimen/_30sdp"
+                                app:maxImageSize="@dimen/_30sdp"
+                                app:tint="@null"
+                                app:tintMode="src_atop"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+                            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                android:id="@+id/BTN_contact_fb"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginHorizontal="@dimen/_10sdp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/ic_facebook"
+                                app:backgroundTint="@color/white"
+                                app:elevation="@dimen/_3sdp"
+                                app:fabCustomSize="@dimen/_30sdp"
+                                app:maxImageSize="@dimen/_30sdp"
+                                app:tint="@null"
+                                app:tintMode="src_atop"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+                            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                android:id="@+id/BTN_contact_twitter"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginHorizontal="@dimen/_10sdp"
+                                android:backgroundTint="@color/white"
+                                android:src="@drawable/ic_twitter"
+                                app:elevation="@dimen/_3sdp"
+                                app:fabCustomSize="@dimen/_30sdp"
+                                app:maxImageSize="@dimen/_30sdp"
+                                app:tint="@null"
+                                app:tintMode="src_atop"
+                                tools:ignore="SpeakableTextPresentCheck" />
+
+
+                        </LinearLayout>
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:gravity="center"
+                            android:text="@string/copyright"
+                            android:textSize="@dimen/_8sdp"
+                            tools:ignore="TextSizeCheck" />
+                    </LinearLayout>
+
+                </FrameLayout>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+</LinearLayout>

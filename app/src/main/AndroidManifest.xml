@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <queries>
+
+        <!-- List of apps which you want to support for Intent pay -->
+        <package android:name="com.google.android.apps.nbu.paisa.user" />
+        <package android:name="com.phonepe.app" />
+        <!--
+             Specific intents you query for,
+             eg: for a custom share UI
+        -->
+        <intent>
+            <action android:name="android.intent.action.SEND" />
+        </intent>
+    </queries>
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/tathastu_ic"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/tathastu_ic_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Tathastu"
+        tools:targetApi="31">
+        <activity
+            android:name=".User_Package.user_Campaign.User_Compaign_View_Donation"
+            android:exported="false" />
+        <activity
+            android:name=".User_Package.user_Entry.Forgot_PWD.Reset_pwd_OTP"
+            android:exported="false" />
+        <activity
+            android:name=".User_Package.user_Entry.Forgot_PWD.Reset_pwd_mno"
+            android:exported="false" />
+        <activity
+            android:name=".User_Package.Reset_PWD.Reset_Pwd_Screen"
+            android:exported="false" />
+        <activity
+            android:name=".NGO_Package.NGO_Entry.Forgot_PWD.NGO_reset_pwd_OTP"
+            android:exported="false" />
+        <activity
+            android:name=".NGO_Package.NGO_Entry.Forgot_PWD.NGO_reset_pwd_mno"
+            android:exported="false" />
+        <activity
+            android:name=".NGO_Package.NGO_Reset_PWD.NGO_Reset_Pwd_Screen"
+            android:exported="false" />
+        <activity
+            android:name=".Common_Screens.After_Intro_Start"
+            android:exported="true" />
+        <activity
+            android:name=".NGO_Package.NGO_Campaign.NGO_Campaign_View_Donations"
+            android:exported="true" />
+        <activity
+            android:name=".NGO_Package.NGO_Campaign.NGO_Edit_New_Campaign_Request"
+            android:exported="true" />
+        <activity
+            android:name=".NGO_Package.NGO_Campaign.NGO_Add_New_Campaign_Request"
+            android:exported="true" />
+        <activity
+            android:name=".NGO_Package.NGO_Campaign.NGO_Campaign_indetails"
+            android:exported="true" />
+        <activity
+            android:name=".NGO_Package.NGO_Campaign.NGO_Campaign"
+            android:exported="true" />
+        <activity
+            android:name=".User_Package.user_Campaign.user_Campaign_Donate"
+            android:exported="true" />
+        <activity
+            android:name=".User_Package.user_Campaign.user_Funding_indetails_Campaign"
+            android:exported="true" />
+        <activity
+            android:name=".User_Package.user_Campaign.user_Funding_Campaign"
+            android:exported="true" />
+        <activity
+            android:name=".NGO_Package.NGO_Event.NGO_Event_View_Volunteers"
+            android:exported="true" />
+        <activity
+            android:name=".NGO_Package.NGO_Event.NGO_Event_inDetails"
+            android:exported="true" />
+        <activity
+            android:name=".NGO_Package.NGO_Event.NGO_Event_Edit_Request"
+            android:exported="true" />
+        <activity
+            android:name=".NGO_Package.NGO_Event.NGO_Event_Add_Request"
+            android:exported="true" />
+        <activity
+            android:name=".NGO_Package.NGO_Event.NGO_event_notify"
+            android:exported="true" />
+        <activity
+            android:name=".User_Package.user_Event.user_Event_Volunteer_Request"
+            android:exported="true" />
+        <activity
+            android:name=".User_Package.user_Event.user_Event_inDetails"
+            android:exported="true" />
+        <activity
+            android:name=".User_Package.user_DashBoard.User_ngo_Selection_Screen"
+            android:exported="true" />
+        <activity
+            android:name=".User_Package.user_NGO_list.New_NGO_list.direct_contact_to_new_NGO"
+            android:exported="true" />
+        <activity
+            android:name=".NGO_Package.NGO_Profile.NGO_Social_Media"
+            android:exported="true" />
+        <activity
+            android:name=".User_Package.user_NGO_list.Donate_payment"
+            android:exported="true" />
+        <activity
+            android:name=".User_Package.Education_Section.All_Donors.Edu_user_allDonors_indetails"
+            android:exported="true" />
+        <activity
+            android:name=".User_Package.Education_Section.All_Donors.Edu_user_all_donors"
+            android:exported="true" />
+        <activity
+            android:name=".User_Package.Education_Section.Camp.Edu_Donation_Camp"
+            android:exported="true" />
+        <activity
+            android:name=".User_Package.Education_Section.Camp.Edu_Camp_Indetails"
+            android:exported="true" />
+        <activity
+            android:name=".User_Package.Education_Section.History.Edu_user_history_edit_request"
+            android:exported="true" />
+        <activity
+            android:name=".User_Package.Education_Section.History.Edu_user_History"
+            android:exported="true" />
+        <activity
+            android:name=".User_Package.Education_Section.Edu_User_Request"
+            android:exported="true" />
+        <activity
+            android:name=".User_Package.Food_Section.All_Donors.Food_user_allDonors_indetails"
+            android:exported="true" />
+        <activity
+            android:name=".User_Package.Food_Section.History.Food_user_history_edit_request"
+            android:exported="true" />
+        <activity
+            android:name=".User_Package.Food_Section.All_Donors.Food_user_all_donors"
+            android:exported="true" />
+        <activity
+            android:name=".User_Package.Food_Section.Camp.Food_Camp_Indetails"
+            android:exported="true" />
+        <activity
+            android:name=".User_Package.Food_Section.History.Food_user_History"
+            android:exported="true" />
+        <activity
+            android:name=".User_Package.Food_Section.Camp.Food_Donation_Camp"
+            android:exported="true" />
+        <activity
+            android:name=".User_Package.Food_Section.Food_User_Request"
+            android:exported="true" />
+        <activity
+            android:name=".User_Package.user_DashBoard.Education_Selection_Screen"
+            android:exported="true" />
+        <activity
+            android:name=".User_Package.user_DashBoard.Food_Selection_Screen"
+            android:exported="true" />
+        <activity
+            android:name=".NGO_Package.NGO_Education_Camp.Donor.NGO_edu_user_request_indetails"
+            android:exported="true" />
+        <activity
+            android:name=".NGO_Package.NGO_Education_Camp.Donor.NGO_edu_user_request"
+            android:exported="true" />
+        <activity
+            android:name=".NGO_Package.NGO_Education_Camp.History.NGO_edu_camp_historyIndetails"
+            android:exported="true" />
+        <activity
+            android:name=".NGO_Package.NGO_Education_Camp.History.NGO_edu_camp_History"
+            android:exported="true" />
+        <activity
+            android:name=".NGO_Package.NGO_Education_Camp.NGO_EduCamp_Request"
+            android:exported="true" />
+        <activity
+            android:name=".NGO_Package.NGO_Education_Camp.NGO_Educamp_Selection"
+            android:exported="true" />
+        <activity
+            android:name=".NGO_Package.NGO_Food_Camp.Donor.NGO_food_user_request_inDetails"
+            android:exported="true" />
+        <activity
+            android:name=".NGO_Package.NGO_Food_Camp.Donor.NGO_food_user_request"
+            android:exported="true" />
+        <activity
+            android:name=".NGO_Package.NGO_Blood_Camp.History.NGO_blood_camp_history"
+            android:exported="true" />
+        <activity
+            android:name=".NGO_Package.NGO_Blood_Camp.History.NGO_blood_camp_history_indetails"
+            android:exported="true" />
+        <activity
+            android:name=".NGO_Package.NGO_Blood_Camp.NGO_blood_camp_request"
+            android:exported="true" />
+        <activity
+            android:name=".NGO_Package.NGO_Blood_Camp.NGO_BloodCamp_Selection"
+            android:exported="true" />
+        <activity
+            android:name=".NGO_Package.NGO_Food_Camp.History.NGO_food_camp_history_indetails"
+            android:exported="true" />
+        <activity
+            android:name=".NGO_Package.NGO_Food_Camp.History.NGO_food_camp_history"
+            android:exported="true" />
+        <activity
+            android:name=".NGO_Package.NGO_Food_Camp.Request.NGO_food_camp_request"
+            android:exported="true" />
+        <activity
+            android:name=".NGO_Package.NGO_Food_Camp.NGO_FoodCamp_Selection"
+            android:exported="true" />
+        <activity
+            android:name=".NGO_Package.NGO_History.NGO_History_Screen"
+            android:exported="true" />
+        <activity
+            android:name=".NGO_Package.NGO_Profile.NGO_Update_Profile"
+            android:exported="true" />
+        <activity
+            android:name=".NGO_Package.NGO_Profile.NGO_Profile_Screen"
+            android:exported="true" />
+        <activity
+            android:name=".NGO_Package.NGO_DashBoard.NGO_Dashboard_Screen"
+            android:exported="true" />
+        <activity
+            android:name=".User_Package.user_DashBoard.Blood_Selection_Screen"
+            android:exported="true" />
+        <activity
+            android:name=".User_Package.Blood_Section.O_Edit_detail_page"
+            android:exported="true" />
+        <activity
+            android:name=".User_Package.Blood_Section.O_add_details"
+            android:exported="true" />
+        <activity
+            android:name=".User_Package.Blood_Section.O_my_request"
+            android:exported="true" />
+        <activity
+            android:name=".User_Package.Blood_Section.B_Details_of_Camp"
+            android:exported="true" />
+        <activity
+            android:name=".User_Package.Blood_Section.B_Details_of_person"
+            android:exported="true" />
+        <activity
+            android:name=".User_Package.Blood_Section.B_Edit_detail_page"
+            android:exported="true" />
+        <activity
+            android:name=".User_Package.Blood_Section.B_add_details"
+            android:exported="true" />
+        <activity
+            android:name=".User_Package.Blood_Section.B_Request_page"
+            android:exported="true" />
+        <activity
+            android:name=".User_Package.Blood_Section.B_Home_Screen_2"
+            android:exported="true" />
+        <activity
+            android:name=".User_Package.Blood_Section.B_Home_Screen"
+            android:exported="true" />
+        <activity
+            android:name=".Admin_Package.Admin_Feedback.Admin_All_Feedback"
+            android:exported="true" />
+        <activity
+            android:name=".Admin_Package.Admin_NGO.Person_User_Data.Admin_NGO_p_Details"
+            android:exported="true" />
+        <activity
+            android:name=".Admin_Package.Admin_NGO.All_Data.Admin_NGO_Data"
+            android:exported="true" />
+        <activity
+            android:name=".Admin_Package.Admin_user.Person_User_Data.Admin_Person_Details"
+            android:exported="true" />
+        <activity
+            android:name=".Admin_Package.Admin_user.All_Data.Admin_User_Data"
+            android:exported="true" />
+        <activity
+            android:name=".Admin_Package.Admin_DashBoard.Admin_Profile_Screen"
+            android:exported="true" />
+        <activity
+            android:name=".User_Package.user_Common_Screens.FeedBack_Screen"
+            android:exported="true" />
+        <activity
+            android:name=".Admin_Package.Admin_DashBoard.Admin_DashBoard_Screen"
+            android:exported="true" />
+        <activity
+            android:name=".Admin_Package.Admin_Entry.Admin_Login_Screen"
+            android:exported="true" />
+        <activity
+            android:name=".NGO_Package.NGO_Entry.NGO_OTP_Screen"
+            android:exported="true" />
+        <activity
+            android:name=".NGO_Package.NGO_Entry.NGO_Login_Screen"
+            android:exported="true" />
+        <activity
+            android:name=".NGO_Package.NGO_Entry.NGO_Signin_Screen"
+            android:exported="true" />
+        <activity
+            android:name=".User_Package.user_History.History_Screen"
+            android:exported="true"
+            android:label="@string/title_activity_history_screen" />
+        <activity
+            android:name=".User_Package.user_DashBoard.Update_Profile_Screen"
+            android:exported="true" />
+        <activity
+            android:name=".User_Package.user_NGO_list.direct_contact_to_NGO"
+            android:exported="true" />
+        <activity
+            android:name=".User_Package.user_Quotes.AllQuotes_Screen"
+            android:exported="true" />
+        <activity
+            android:name=".Common_Screens.Selection_Screen"
+            android:exported="true" />
+        <activity
+            android:name=".User_Package.user_HelpLine.Helpline_numbers_Screen"
+            android:exported="true" />
+        <activity
+            android:name=".User_Package.user_Common_Screens.About_us_Screen"
+            android:exported="true" />
+        <activity
+            android:name=".User_Package.user_Common_Screens.Contact_us_Screen"
+            android:exported="true" />
+        <activity
+            android:name=".User_Package.user_Event.Event_Notifications_Screen"
+            android:exported="true" />
+        <activity
+            android:name=".User_Package.user_DashBoard.Profile_Screen"
+            android:exported="true" />
+        <activity
+            android:name=".User_Package.user_DashBoard.DashBoard_Screen"
+            android:exported="true"
+            android:label="@string/title_activity_dash_board_screen" />
+        <activity
+            android:name=".User_Package.user_Entry.Otp_Screen"
+            android:exported="true" />
+        <activity
+            android:name=".User_Package.user_Entry.Signin_Screen"
+            android:exported="true" />
+        <activity
+            android:name=".Common_Screens.Intro.Intro_Starting_Screen"
+            android:exported="true" /> <!-- <activity -->
+        <!-- android:name=".Intro_Third_Screen" -->
+        <!-- android:exported="true" /> -->
+        <!-- <activity -->
+        <!-- android:name=".Intro_Second_Screen" -->
+        <!-- android:exported="true" /> -->
+        <!-- <activity -->
+        <!-- android:name=".Intro_First_Screen" -->
+        <!-- android:exported="true" /> -->
+        <activity
+            android:name=".User_Package.user_Entry.Login_Screen"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".User_Package.user_Common_Screens.Terms_C_activity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Common_Screens.Splash_Screen"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

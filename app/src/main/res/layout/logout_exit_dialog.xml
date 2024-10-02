@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left|center">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/BTN_dash_food"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_round_warning_24"
+            android:tint="@color/err_color" />
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kanit_medium"
+            android:gravity="center"
+            android:text="Logout"
+            android:textColor="@color/status_color"
+            android:textSize="@dimen/_15sdp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dialog_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:fontFamily="@font/inter_semibold"
+        android:gravity="center"
+        android:text="Are you sure you want to logout from the app?"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_11sdp"
+        tools:ignore="TextSizeCheck" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/BTN_exit_yes"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginVertical="@dimen/_5sdp"
+            android:layout_weight="2"
+            android:backgroundTint="@color/status_color"
+            android:padding="@dimen/_1sdp"
+            android:text="Yes"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp"
+            app:shapeAppearanceOverlay="@style/RoundedSquare"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/BTN_exit_no"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginVertical="@dimen/_5sdp"
+            android:layout_weight="2"
+            android:backgroundTint="@color/white"
+            android:padding="@dimen/_1sdp"
+            android:text="No"
+            android:textColor="@color/status_color"
+            android:textSize="@dimen/_13sdp"
+            app:shapeAppearanceOverlay="@style/RoundedSquare"
+            app:strokeColor="@color/status_color"
+            app:strokeWidth="@dimen/_1sdp"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+</LinearLayout>

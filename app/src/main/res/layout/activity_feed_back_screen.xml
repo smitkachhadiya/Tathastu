@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/toolbar_BG"
+    android:orientation="vertical"
+    tools:context=".User_Package.user_Common_Screens.FeedBack_Screen">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/inter_semibold"
+            android:gravity="center"
+            android:text="Give Feedback"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sdp"
+            tools:ignore="HardcodedText,TextSizeCheck,TouchTargetSizeCheck" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            tools:ignore="SpeakableTextPresentCheck">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/BTN_back"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="start"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:backgroundTint="@color/status_color"
+                    android:src="@drawable/round_arrow_back_24"
+                    app:fabCustomSize="@dimen/_30sdp"
+                    app:fabSize="mini"
+                    app:tint="@color/white"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        app:shapeAppearanceOverlay="@style/TopRoundedCorner" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:fontFamily="@font/inter_medium"
+                            android:gravity="center"
+                            android:text="Send us your feedback !"
+                            android:textColor="@color/status_color"
+                            android:textSize="@dimen/_15sdp"
+                            android:textStyle="bold"
+                            tools:ignore="TextSizeCheck" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:fontFamily="@font/inter_medium"
+                            android:gravity="center"
+                            android:text="Do you have a suggestion or found some bug? \nlet us know in the field below :"
+                            android:textColor="@color/status_color"
+                            android:textSize="@dimen/_10sdp"
+                            android:textStyle="bold"
+                            tools:ignore="TextSizeCheck" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:background="@color/status_color" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_marginHorizontal="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_25sdp"
+                            android:text="Your Name :"
+                            android:textColor="@color/status_color" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/txtlayout_feedback_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            app:boxBackgroundColor="@color/textField_Color"
+                            app:boxBackgroundMode="filled"
+                            app:boxStrokeColor="@color/status_color"
+                            app:cursorColor="@color/black"
+                            tools:ignore="HardcodedText">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/txt_feedback_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif"
+                                android:inputType="text"
+                                android:textColor="@color/toolbar_BG_D"
+                                android:textSize="@dimen/_14sdp"
+                                android:textStyle="bold"
+                                tools:ignore="SpeakableTextPresentCheck" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_marginHorizontal="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="Your Email :"
+                            android:textColor="@color/status_color" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/txtlayout_feedback_Email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            app:boxBackgroundColor="@color/textField_Color"
+                            app:boxBackgroundMode="filled"
+                            app:boxStrokeColor="@color/status_color"
+                            app:cursorColor="@color/black"
+                            tools:ignore="HardcodedText">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/txt_feedback_Email"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif"
+                                android:inputType="textEmailAddress"
+                                android:textColor="@color/toolbar_BG_D"
+                                android:textSize="@dimen/_14sdp"
+                                android:textStyle="bold"
+                                tools:ignore="SpeakableTextPresentCheck" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_marginHorizontal="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:text="Your Feedback :"
+                            android:textColor="@color/status_color" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/txtlayout_feedback"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            app:boxBackgroundColor="@color/textField_Color"
+                            app:boxBackgroundMode="filled"
+                            app:boxStrokeColor="@color/status_color"
+                            app:counterEnabled="true"
+                            app:counterMaxLength="300"
+                            app:counterTextColor="@color/status_color"
+                            app:cursorColor="@color/black"
+                            tools:ignore="HardcodedText">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/txt_feedback"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_150sdp"
+                                android:fontFamily="sans-serif"
+                                android:gravity="start"
+                                android:textStyle="bold"
+                                android:inputType="textMultiLine"
+                                android:maxLength="300"
+                                android:textColor="@color/toolbar_BG_D"
+                                android:textSize="@dimen/_14sdp"
+                                tools:ignore="SpeakableTextPresentCheck" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                            android:id="@+id/BTN_feedback"
+                            android:layout_width="@dimen/_150sdp"
+                            android:layout_height="@dimen/_32sdp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:backgroundTint="@color/toolbar_BG"
+                            android:gravity="center"
+                            android:text="Send Feedback"
+                            android:layout_marginBottom="@dimen/_30sdp"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_15sdp"
+                            app:shapeAppearanceOverlay="@style/Circular"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+                    </LinearLayout>
+
+                </FrameLayout>
+            </LinearLayout>
+</ScrollView>
+
+
+    </FrameLayout>
+
+</LinearLayout>

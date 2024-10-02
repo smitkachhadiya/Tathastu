@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name">Tathastu</string>
+    <string name="app_slogan">"&quot;-One Step Towards Donating and Helping Those in Need.&quot;"</string>
+    <string name="company_name">"The Threes InfoTech"</string>
+    <string name="company_slogan">"&quot;- An Innovation Begins within Three People, Transforming Ideas into Solutions.&quot;"</string>
+    <string name="terms_condition"><b><u>TATHASTU</u></b> - One Step Towards Donating and Helping Those in Need : Terms and Conditions (More Details) \n \n
+        <b><i>Last Updated: [16-feb-2024]</i></b> \n \n
+
+        <b><u>1. Introduction</u></b>\n
+Welcome to <b>"TATHASTU"</b> (The "App"),\na platform designed to simplify charitable giving and connect users with those in need. By using the App, you agree to be bound by these terms and conditions. Please read them carefully before using the App. If you do not agree with any part of these terms, you may not use the App.\n
+
+        \n<b><u>2. Donations</u></b>\n\n
+        ◼ <b>Donation Process:</b>
+\n>> You can donate to various charitable causes and campaigns listed on the App.
+\n\n>> Donations can be made securely through our payment gateway using various methods like credit cards, debit cards, and net banking.
+\n\n>> We strive to be transparent about where your donations will go. The App displays information about the recipient organization and how the funds will be used.
+
+        \n\n ◼ <b>Please note:</b> We currently do not guarantee the allocation of funds to a specific individual, project, or organization within a chosen cause or campaign.
+
+\n\n ◼ <b>Fees:</b>
+\n>> <b>"TATHASTU"</b> does not charge any processing fees for donations. However, our payment gateway may charge processing fees, which will be clearly displayed before completing your donation.
+
+\n\n ◼ <b>Refunds:</b>
+\n>>Donations made through the App are generally non-refundable. However, in exceptional cases of error or fraud, you may contact customer support for assistance.
+
+        \n\n<b><u>3. User Accounts</u></b>
+\n>> You may create an account to access certain features of the App, such as tracking your donation history and receiving updates on causes you support.
+\n\n>> You are responsible for maintaining the confidentiality of your account information, including your password.
+\n\n>> You agree to provide accurate, current, and complete information during the registration process.
+
+        \n\n<b><u>4. Data Privacy</u></b>
+\n>> <b>"TATHASTU"</b> takes your privacy seriously. We collect and use your personal information only as described in our Privacy Policy, which is available on the App.
+We will not share your personal information with third parties without your consent, except as required by law or to fulfill our obligations to you.
+
+        \n\n<b><u>5. Content Ownership</u></b>
+\n>> You retain ownership of any content you submit to the App, such as comments or reviews.
+        \n\n>> By submitting content, you grant <b>"TATHASTU"</b> a non-exclusive, worldwide, royalty-free license to use, display, and distribute the content for promotional purposes and to improve the App.
+
+        \n\n<b><u>6. Code of Conduct</u></b>
+\n>> You agree to use the App in a respectful and responsible manner.
+\n\n>> Any form of abusive, harassing, discriminatory, or illegal behavior is strictly prohibited.
+
+        \n\n<b><u>7. Termination</u></b>
+\n>> <b>"TATHASTU"</b> reserves the right to terminate or suspend your account without notice if you violate these terms or engage in any illegal or harmful activity.
+
+        \n\n<b><u>8. Disclaimer and Liability</u></b>
+\n>> <b>"TATHASTU"</b> makes no warranties or representations about the accuracy, completeness, reliability, or availability of the App or its content.
+\n\n>> You use the App at your own risk. <b>"TATHASTU"</b> is not liable for any damages arising from the use of the App or donations made through it.
+
+        \n\n<b><u>9. Governing Law</u></b>
+\n>> These terms and conditions are governed by the laws of [Jurisdiction].
+
+        \n\n<b><u>10. Changes to Terms</u></b>
+\n>> <b>"TATHASTU"</b> may update these terms at any time. We will notify you of any changes by posting the updated terms on the App. Your continued use of the App after such posting constitutes your acceptance of the updated terms.
+
+        \n\n<b><u>11. Contact Us</u></b>
+\n>> If you have any questions or concerns about these terms or the App, please contact us at [Contact Information].
+
+        \n\n\n<b>◼ Additional Notes:</b>
+\n>> You may want to consider adding specific details about the types of charitable organizations and causes supported by the App.
+\n\n>> You may also want to clarify the donation processing timeline and how users can track their donations.
+\n\n>> Be sure to provide a link to your Privacy Policy.
+\n\n>> Consider translating these terms into other languages if your App is available to users in different regions.
+\n\n>> Remember, these are just suggestions, and you should tailor the terms to your specific App and business model. It is always recommended to consult with a legal professional to ensure your terms and conditions are compliant with all applicable laws and regulations.
+
+        \n\nThank You For Joining &amp; Supporting Us....
+        \n\nYour Donations can be used to many people who actually needed....
+</string>
+    <string name="title_activity_dash_board_screen">DashBoard_Screen</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="Open_nav">Open Navigation Drawer</string>
+    <string name="Close_nav">Close Navigation Drawer</string>
+    <string name="logout">Logout from app\n</string>
+    <string name="profile">Profile screen\n</string>
+    <string name="Quotes_of_day">&quot;Donate blood and be the reason for someone&apos;s existence.&quot;&quot;Donate blood and be the reason for someone&apos;s existence.&quot;</string>
+    <string name="about_app">"Welcome to Tathastu, where every step you take brings us one step closer to making a positive impact on the world. Our mission is to facilitate and encourage acts of kindness, promoting a community of giving and support. With Tathastu, you have the power to make a difference – one step, one donation at a time."</string>
+    <string name="about_company">"At The Threes Infotech, we believe in the transformative power of innovation. Born from the collaboration of three visionaries, our company is dedicated to turning ideas into impactful solutions. We specialize in providing cutting-edge technological innovations that address real-world challenges. Our team brings a unique blend of creativity, expertise, and passion to every project, ensuring that innovation is not just a concept but a reality.\n \nOur Team:\nImagine a trio of skilled professionals collaborating to bring your app ideas to life. That&apos;s us! At The Threes Infotech, our team of experts, each bringing their unique expertise, works seamlessly to ensure your app stands out in the digital landscape.\n \nWhy Choose Us:\n\n(1) Expertise: Our team consists of seasoned developers who know the ins and outs of Android app development.\n\n(2) Innovation: We thrive on turning creative ideas into functional apps that make a difference.\n\n(3) Client-Centric: Your satisfaction is our priority. We work closely with you to understand your vision and deliver results that exceed expectations."</string>
+    <string name="terms_amp_conditions"><b><u>Terms &amp; Conditions</u></b></string>
+    <string name="signin_in_LOGIN"><b><u>Register</u></b></string>
+    <string name="forgot_pwd"><b><u>Forgot Password?</u></b></string>
+    <string name="reset_pwd"><b><u>Reset Password?</u></b></string>
+    <string name="login_in_SIGNIN"><b><u>Login</u></b></string>
+    <string name="see_all_quote"><b><u>see all</u></b></string>
+    <string name="copyright">Copyright © 2024 Threes Infotech. \nAll rights reserved.</string>
+    <string name="see_details"><b><u>view more </u></b></string>
+    <string name="see_less"><b><u>see less</u></b></string>
+    <string name="title_activity_history_screen">History_Screen</string>
+    <string name="add_social_media"><b><u>Add Social Media Accounts</u></b></string>
+
+
+    //blood
+    <string name="blood_donation_one">You can donate blood only if you are 18 years old or above.</string>
+    <string name="blood_donation_two">If you have conditions such as cancer, diabetes, chest pain, high blood pressure, or heart disease, you are not eligible to donate blood.</string>
+    <string name="blood_donation_three">Even if you pass the donor selection, it is essential to inform about any other physical or health conditions you may have.</string>
+
+    //food
+    <string name="food_donation_one">Food donation eligibility requires individuals to be 18 years or older.</string>
+    <string name="food_donation_two">Please refrain from donating opened or expired food products for the well-being of recipients.</string>
+    <string name="food_donation_three">Due to dietary restrictions and allergies, we encourage donors to avoid items containing nuts or potential allergens.</string>
+    <string name="description"><b><u>Description :</u></b></string>
+    <string name="important"><b><u>Important :</u></b></string>
+    <string name="requirements"><b><u>Requirements :</u></b></string>
+    <string name="food_details"><b><u>Food Details :</u></b></string>
+    <string name="edu_details"><b><u>Stationary Details :</u></b></string>
+    <string name="edu_donation_one">Provide new or gently used educational stationery to support learning.</string>
+    <string name="edu_donation_two">Focus on essentials like notebooks, pens, and pencils for maximum impact.</string>
+    <string name="edu_donation_three">Ensure items are in good condition to enhance students\' educational experience.</string>
+
+</resources>

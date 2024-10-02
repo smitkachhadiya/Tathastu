@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white"
+    tools:context=".Common_Screens.Splash_Screen">
+
+   <FrameLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <com.google.android.material.imageview.ShapeableImageView
+           android:layout_width="@dimen/_150sdp"
+           android:layout_height="@dimen/_150sdp"
+           android:layout_gravity="center"
+           app:srcCompat="@drawable/splash_screen_icon"/>
+
+       <com.google.android.material.imageview.ShapeableImageView
+           android:id="@+id/app_word"
+           android:layout_width="@dimen/_200sdp"
+           android:layout_height="@dimen/_250sdp"
+           android:layout_gravity="bottom|center"
+           app:shapeAppearanceOverlay="@style/RoundedSquare"
+           app:srcCompat="@drawable/tathastu_word"
+           app:tint="@color/status_color"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="bottom|center"
+           android:layout_marginBottom="@dimen/_10sdp"
+           android:fontFamily="sans-serif"
+           android:text="Version 1.0"
+           android:textColor="@color/toolbar_BG_D"
+           android:textSize="@dimen/_10sdp"
+           tools:ignore="TextSizeCheck" />
+   </FrameLayout>
+</LinearLayout>

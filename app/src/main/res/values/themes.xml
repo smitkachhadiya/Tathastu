@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Tathastu" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:screenOrientation">portrait</item>
+        <item name="android:windowLightStatusBar">true</item> <!-- font visibility-->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/status_color</item>
+    </style>
+
+    <style name="Theme.Tathastu" parent="Base.Theme.Tathastu" />
+    
+    
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/nav_slide_in</item>
+        <item name="android:windowExitAnimation">@anim/nav_slide_out</item>
+    </style>
+</resources>

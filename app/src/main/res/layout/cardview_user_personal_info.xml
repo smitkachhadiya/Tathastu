@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_15sdp"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardElevation="@dimen/_5sdp"
+    app:cardMaxElevation="@dimen/_8sdp"
+    app:cardPreventCornerOverlap="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+
+
+        <LinearLayout
+            android:id="@+id/layout_NGO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_2sdp"
+            android:visibility="visible">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="@dimen/_7sdp"
+                android:fontFamily="@font/inter_semibold"
+                android:gravity="start"
+                android:text="FName Lname"
+                android:maxLines="2"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:textColor="@color/toolbar_BG_D"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="@dimen/_15sdp"
+                app:autoSizeMinTextSize="8sp"
+                app:autoSizeTextType="uniform"
+                tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_user_mno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:drawableStart="@drawable/round_phone_24"
+                android:drawablePadding="@dimen/_10sdp"
+                android:fontFamily="@font/inter_semibold"
+                android:gravity="start"
+                android:maxLines="2"
+                android:text="+91 2612252942"
+                android:textColor="@color/status_color"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="@dimen/_13sdp"
+                app:autoSizeMinTextSize="8sp"
+                app:autoSizeTextType="uniform"
+                app:drawableTint="@color/status_color"
+                tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_user_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:drawableStart="@drawable/baseline_alternate_email_24"
+                android:drawablePadding="@dimen/_10sdp"
+                android:fontFamily="@font/inter_semibold"
+                android:gravity="start"
+                android:maxLines="2"
+                android:text="ayushyamanct8surat@gmail.com"
+                android:textColor="@color/status_color"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="@dimen/_13sdp"
+                app:autoSizeMinTextSize="8sp"
+                app:autoSizeTextType="uniform"
+                app:drawableTint="@color/status_color"
+                tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_user_dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:drawableStart="@drawable/baseline_web_24"
+                android:drawablePadding="@dimen/_10sdp"
+                android:fontFamily="@font/inter_semibold"
+                android:gravity="start"
+                android:maxLines="2"
+                android:text="12/12/2003"
+                android:textColor="@color/status_color"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="@dimen/_13sdp"
+                app:autoSizeMinTextSize="8sp"
+                app:autoSizeTextType="uniform"
+                app:drawableTint="@color/status_color"
+                tools:ignore="TextSizeCheck,TextContrastCheck" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

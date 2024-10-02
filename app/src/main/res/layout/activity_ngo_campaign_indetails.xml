@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/funding_campaign"
+    android:orientation="vertical"
+    tools:context=".NGO_Package.NGO_Campaign.NGO_Campaign_indetails">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/inter_semibold"
+            android:gravity="center"
+            android:text="Campaign Details"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_17sdp"
+            tools:ignore="HardcodedText,TextSizeCheck,TouchTargetSizeCheck" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/BTN_event_back"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="start"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:backgroundTint="@color/funding_campaign"
+            android:src="@drawable/round_arrow_back_24"
+            app:fabCustomSize="@dimen/_30sdp"
+            app:fabSize="mini"
+            app:tint="@color/white"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="@color/white"
+            app:shapeAppearanceOverlay="@style/TopRoundedCorner" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_180sdp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/_17sdp"
+                app:cardElevation="@dimen/_5sdp"
+                app:cardMaxElevation="@dimen/_8sdp"
+                app:cardPreventCornerOverlap="false">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/campaignimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/donate_cloth" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/cname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/inter_semibold"
+                android:gravity="center"
+                android:text="Campaign Name"
+                android:textColor="@color/funding_campaign"
+                android:textSize="@dimen/_20sdp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                tools:ignore="SpeakableTextPresentCheck">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/inter_medium"
+                            android:text="Contribution : "
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_9sdp"
+                            tools:ignore="TextSizeCheck" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/cdonated"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:fontFamily="@font/inter_semibold"
+                            android:lineSpacingExtra="@dimen/_5sdp"
+                            android:text="cdonated"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_3sdp"
+                            android:fontFamily="@font/inter_semibold"
+                            android:lineSpacingExtra="@dimen/_5sdp"
+                            android:text="fund"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_3sdp"
+                            android:fontFamily="@font/inter_semibold"
+                            android:lineSpacingExtra="@dimen/_5sdp"
+                            android:text="raised"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+                    </LinearLayout>
+
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/inter_medium"
+                        android:text="@string/description"
+                        android:textColor="@color/funding_campaign"
+                        android:textSize="@dimen/_9sdp"
+                        tools:ignore="TextSizeCheck" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/cdescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/shadow_rec_white"
+                        android:backgroundTint="@color/funding_campaign"
+                        android:fontFamily="@font/inter_medium"
+                        android:lineHeight="@dimen/_14sdp"
+                        android:padding="@dimen/_10sdp"
+                        android:text="Always be cautious when deleting payment history, as it may impact your records and reporting. If there have been changes or updates to the Razorpay platform after my last knowledge update, checking their official documentation or contacting their support would be the best course of action."
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12sdp"
+                        tools:ignore="TextSizeCheck" />
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginVertical="@dimen/_5sdp"
+                        android:fontFamily="@font/inter_semibold"
+                        android:lineSpacingExtra="@dimen/_5sdp"
+                        android:text="Organized by,"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/_10sdp"
+                        android:background="@drawable/shadow_rec_white"
+                        android:backgroundTint="#66A34C">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:fontFamily="@font/inter_semibold"
+                                android:lineSpacingExtra="@dimen/_5sdp"
+                                android:text="Name : "
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_13sdp" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/oname"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:fontFamily="@font/inter_semibold"
+                                android:lineSpacingExtra="@dimen/_5sdp"
+                                android:text="Organizer's Name"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_13sdp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:lineSpacingExtra="@dimen/_5sdp"
+                                android:fontFamily="@font/inter_semibold"
+                                android:text="Contact No : "
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_13sdp" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/ocontact"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:fontFamily="@font/inter_semibold"
+                                android:lineSpacingExtra="@dimen/_5sdp"
+                                android:text="Organizer's Contact Number"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_13sdp" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                        android:id="@+id/btn_editdetails"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:backgroundTint="@color/funding_campaign"
+                        android:gravity="center"
+                        android:text="Edit Details"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15sdp"
+                        app:shapeAppearanceOverlay="@style/Circular"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                        android:id="@+id/btn_view_donation"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_30sdp"
+                        android:backgroundTint="@color/funding_campaign"
+                        android:gravity="center"
+                        android:text="View Donations"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15sdp"
+                        app:shapeAppearanceOverlay="@style/Circular"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+                </LinearLayout>
+
+            </ScrollView>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

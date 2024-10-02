@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/status_color"
+    tools:context=".User_Package.user_NGO_list.Donate_payment">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/inter_semibold"
+            android:gravity="center"
+            android:text="Donation"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18sdp"
+            tools:ignore="HardcodedText,TextSizeCheck,TouchTargetSizeCheck" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/BTN_back_pay"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="start"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:backgroundTint="@color/status_color"
+            android:src="@drawable/round_arrow_back_24"
+            app:fabCustomSize="@dimen/_30sdp"
+            app:fabSize="mini"
+            app:tint="@color/white"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            tools:ignore="SpeakableTextPresentCheck">
+
+
+            <LinearLayout
+                android:id="@+id/signin_parentlayout_ngo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="@color/white"
+            app:shapeAppearanceOverlay="@style/TopRoundedCorner" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top|center"
+            android:id="@+id/layout_payment"
+            android:gravity="top"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_gravity="top"
+                android:fontFamily="@font/inter_semibold"
+                android:text="Donation Via Money :"
+                android:textColor="@color/status_color"
+                android:textSize="@dimen/_13sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:fontFamily="@font/inter_regular"
+                android:text="You can donate via money as per your choice :"
+                android:textColor="@color/status_color"
+                android:textSize="@dimen/_10sdp"
+                tools:ignore="TextSizeCheck" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/status_color" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_17sdp"
+                app:cardBackgroundColor="@color/white"
+                app:cardElevation="@dimen/_5sdp"
+                app:cardMaxElevation="@dimen/_8sdp"
+                app:cardPreventCornerOverlap="false">
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="@dimen/_130sdp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:background="@drawable/img_payment_donation"
+                    app:shapeAppearanceOverlay="@style/RoundedSquare"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/inter_regular"
+                android:text="To : "
+                android:textStyle="bold"
+                android:textColor="@color/status_color"
+                android:textSize="@dimen/_10sdp"
+                tools:ignore="TextSizeCheck" />
+            <TextView
+                android:id="@+id/txt_user_ngo_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fontFamily="@font/inter_medium"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:textColor="@color/status_color"
+                android:textSize="@dimen/_14sdp"
+                tools:ignore="TextSizeCheck" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:fontFamily="@font/inter_regular"
+                android:text="How much ???"
+                android:textStyle="bold"
+                android:textColor="@color/status_color"
+                android:textSize="@dimen/_10sdp"
+                tools:ignore="TextSizeCheck" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtlayout_payment_user"
+                android:layout_width="@dimen/_290sdp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                app:boxBackgroundColor="@color/textField_Color"
+                app:boxBackgroundMode="filled"
+                app:boxStrokeColor="@color/toolbar_BG"
+                app:boxStrokeErrorColor="@color/err_color"
+                app:cursorColor="@color/black"
+                app:prefixText="₹"
+                app:prefixTextColor="@color/status_color"
+                app:cursorErrorColor="@color/err_color"
+                tools:ignore="HardcodedText">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_payment_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_medium"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="3"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:rowCount="3"
+                tools:ignore="ExtraText,RedundantNamespace">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_pay_100"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_5sdp"
+                    app:cardCornerRadius="@dimen/_17sdp"
+                    app:cardBackgroundColor="@color/status_color"
+                    app:cardPreventCornerOverlap="false">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹ 100"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/inter_medium"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/_13sdp"/>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_pay_200"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_5sdp"
+                    app:cardCornerRadius="@dimen/_17sdp"
+                    app:cardBackgroundColor="@color/status_color"
+                    app:cardPreventCornerOverlap="false">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹ 200"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/inter_medium"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/_13sdp"/>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_pay_500"
+                    android:layout_width="@dimen/_75sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_5sdp"
+                    app:cardCornerRadius="@dimen/_17sdp"
+                    app:cardBackgroundColor="@color/status_color"
+                    app:cardPreventCornerOverlap="false">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹ 500"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/inter_medium"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/_13sdp"/>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_pay_1000"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_5sdp"
+                    app:cardCornerRadius="@dimen/_17sdp"
+                    app:cardBackgroundColor="@color/status_color"
+                    app:cardPreventCornerOverlap="false">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹ 1000"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/inter_medium"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/_13sdp"/>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_pay_1500"
+                    android:layout_width="@dimen/_85sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_5sdp"
+                    app:cardCornerRadius="@dimen/_17sdp"
+                    app:cardBackgroundColor="@color/status_color"
+                    app:cardPreventCornerOverlap="false">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹ 1500"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/inter_medium"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/_13sdp"/>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_pay_2000"
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_5sdp"
+                    app:cardCornerRadius="@dimen/_17sdp"
+                    app:cardBackgroundColor="@color/status_color"
+                    app:cardPreventCornerOverlap="false">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹ 2000"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/inter_medium"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/_13sdp"/>
+                </androidx.cardview.widget.CardView>
+            </GridLayout>
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/BTN_pay_donate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:backgroundTint="@color/white"
+                android:layout_marginBottom="@dimen/_100sdp"
+                android:elevation="@dimen/_2sdp"
+                android:gravity="center"
+                app:strokeColor="@color/status_color"
+                app:strokeWidth="@dimen/_1sdp"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:text="Donate"
+                android:textColor="@color/status_color"
+                android:textSize="@dimen/_17sdp"
+                app:shapeAppearanceOverlay="@style/RoundedSquare"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</LinearLayout>

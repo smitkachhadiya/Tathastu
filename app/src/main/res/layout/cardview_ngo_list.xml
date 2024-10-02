@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_15sdp"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardElevation="@dimen/_5sdp"
+    app:cardMaxElevation="@dimen/_8sdp"
+    app:cardPreventCornerOverlap="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_NGO_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="@dimen/_7sdp"
+            android:drawableEnd="@drawable/round_keyboard_arrow_down_24"
+            android:drawablePadding="@dimen/_10sdp"
+            android:fontFamily="@font/inter_semibold"
+            android:gravity="start"
+            android:maxLines="2"
+            android:paddingHorizontal="@dimen/_5sdp"
+            android:text="Substance Abuse and Mental Health Administration (SAMHSA) Helpline"
+            android:textColor="@color/other_ngo"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            app:autoSizeMaxTextSize="@dimen/_15sdp"
+            app:autoSizeMinTextSize="8sp"
+            app:autoSizeTextType="uniform"
+            app:drawableTint="@color/toolbar_BG_D"
+            tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+        <LinearLayout
+            android:id="@+id/layout_NGO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_2sdp"
+            android:visibility="visible">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/first" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_NGO_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:autoLink="map|web"
+                android:drawableStart="@drawable/round_location_on_24"
+                android:drawablePadding="@dimen/_10sdp"
+                android:fontFamily="@font/inter_semibold"
+                android:gravity="start"
+                android:maxLines="3"
+                android:text="NGO PRATIBIMB FOUNDATION-HELPING HAND FOR CHILD EDUCATION ADDRESS"
+                android:textColor="@color/Link"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="@dimen/_12sdp"
+                app:autoSizeMinTextSize="8sp"
+                app:autoSizeTextType="uniform"
+                app:drawableTint="@color/black"
+                tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_NGO_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:drawableStart="@drawable/round_category_24"
+                android:drawablePadding="@dimen/_10sdp"
+                android:fontFamily="@font/inter_semibold"
+                android:gravity="start"
+                android:maxLines="2"
+                android:text="Woman Development"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="@dimen/_13sdp"
+                app:autoSizeMinTextSize="8sp"
+                app:autoSizeTextType="uniform"
+                app:drawableTint="@color/black"
+                tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2sdp"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:background="@color/other_ngo" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_NGO_mno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:autoLink="phone"
+                android:drawableStart="@drawable/round_phone_24"
+                android:drawablePadding="@dimen/_10sdp"
+                android:fontFamily="@font/inter_semibold"
+                android:gravity="start"
+                android:maxLines="2"
+                android:text="+91 2612252942, +91 9687561904"
+                android:textColor="@color/black"
+                android:textColorLink="@color/Link"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="@dimen/_13sdp"
+                app:autoSizeMinTextSize="8sp"
+                app:autoSizeTextType="uniform"
+                app:drawableTint="@color/black"
+                tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_NGO_website"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:autoLink="web"
+                android:drawableStart="@drawable/baseline_language_24"
+                android:drawablePadding="@dimen/_10sdp"
+                android:fontFamily="@font/inter_semibold"
+                android:gravity="start"
+                android:maxLines="2"
+                android:text="https://saviorvoluntarybloodbankresearchcenter.business.site/"
+                android:textColor="@color/black"
+                android:textColorLink="@color/Link"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="@dimen/_13sdp"
+                app:autoSizeMinTextSize="8sp"
+                app:autoSizeTextType="uniform"
+                app:drawableTint="@color/black"
+                tools:ignore="TextSizeCheck,TextContrastCheck,TouchTargetSizeCheck" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_NGO_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:autoLink="email"
+                android:drawableStart="@drawable/baseline_alternate_email_24"
+                android:drawablePadding="@dimen/_10sdp"
+                android:fontFamily="@font/inter_semibold"
+                android:gravity="start"
+                android:maxLines="2"
+                android:text="ayushyamanct8surat@gmail.com"
+                android:textColor="@color/black"
+                android:textColorLink="@color/Link"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="@dimen/_13sdp"
+                app:autoSizeMinTextSize="8sp"
+                app:autoSizeTextType="uniform"
+                app:drawableTint="@color/black"
+                tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2sdp"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:background="@color/other_ngo" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_NGO_instagram"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:autoLink="web"
+                android:drawableStart="@drawable/instagram"
+                android:drawablePadding="@dimen/_10sdp"
+                android:fontFamily="@font/inter_semibold"
+                android:gravity="start"
+                android:maxLines="2"
+                android:text="https://www.instagram.com/theakshayapatrafoundation/"
+                android:textColor="@color/black"
+                android:textColorLink="@color/Link"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="@dimen/_13sdp"
+                app:autoSizeMinTextSize="8sp"
+                app:autoSizeTextType="uniform"
+                app:drawableTint="@color/black"
+                tools:ignore="TextSizeCheck,TextContrastCheck,TouchTargetSizeCheck" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_NGO_linkedin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:autoLink="web"
+                android:drawableStart="@drawable/linkedin"
+                android:drawablePadding="@dimen/_10sdp"
+                android:fontFamily="@font/inter_semibold"
+                android:gravity="start"
+                android:maxLines="2"
+                android:text="https://www.linkedin.com/company/the-akshaya-patra-foundation?originalSubdomain=in"
+                android:textColor="@color/black"
+                android:textColorLink="@color/Link"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="@dimen/_13sdp"
+                app:autoSizeMinTextSize="8sp"
+                app:autoSizeTextType="uniform"
+                app:drawableTint="@color/black"
+                tools:ignore="TextSizeCheck,TextContrastCheck,TouchTargetSizeCheck" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_NGO_facebook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:autoLink="web"
+                android:drawableStart="@drawable/facebook"
+                android:drawablePadding="@dimen/_10sdp"
+                android:fontFamily="@font/inter_semibold"
+                android:gravity="start"
+                android:maxLines="2"
+                android:text="https://www.facebook.com/people/Aryavart-Foundation/100068869735907/"
+                android:textColor="@color/black"
+                android:textColorLink="@color/Link"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="@dimen/_13sdp"
+                app:autoSizeMinTextSize="8sp"
+                app:autoSizeTextType="uniform"
+                app:drawableTint="@color/black"
+                tools:ignore="TextSizeCheck,TextContrastCheck,TouchTargetSizeCheck" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_NGO_twitter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:autoLink="web"
+                android:drawableStart="@drawable/twitter"
+                android:drawablePadding="@dimen/_10sdp"
+                android:fontFamily="@font/inter_semibold"
+                android:gravity="start"
+                android:maxLines="2"
+                android:text="https://twitter.com/globalvisionngo"
+                android:textColor="@color/black"
+                android:textColorLink="@color/Link"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="@dimen/_13sdp"
+                app:autoSizeMinTextSize="8sp"
+                app:autoSizeTextType="uniform"
+                app:drawableTint="@color/black"
+                tools:ignore="TextSizeCheck,TextContrastCheck,TouchTargetSizeCheck" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_NGO_youtube"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:autoLink="web"
+                android:drawableStart="@drawable/youtube"
+                android:drawablePadding="@dimen/_10sdp"
+                android:fontFamily="@font/inter_semibold"
+                android:gravity="start"
+                android:maxLines="2"
+                android:text="https://www.youtube.com/channel/UCm4CJOQDgAxNYrBOIuQ2ZEQ"
+                android:textColor="@color/black"
+                android:textColorLink="@color/Link"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="@dimen/_13sdp"
+                app:autoSizeMinTextSize="8sp"
+                app:autoSizeTextType="uniform"
+                app:drawableTint="@color/black"
+                tools:ignore="TextSizeCheck,TextContrastCheck,TouchTargetSizeCheck" />
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/BTN_user_donate"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:backgroundTint="@color/other_ngo"
+                android:elevation="0dp"
+                android:gravity="center"
+                android:text="Donate"
+                android:paddingVertical="@dimen/_5sdp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp"
+                app:shapeAppearanceOverlay="@style/Circular"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+        <!--        <com.google.android.material.textview.MaterialTextView-->
+        <!--            android:id="@+id/txt_NGO_seeall"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="end"-->
+        <!--            android:layout_marginBottom="@dimen/_7sdp"-->
+        <!--            android:layout_marginEnd="@dimen/_20sdp"-->
+        <!--            android:clickable="true"-->
+        <!--            android:focusable="true"-->
+        <!--            android:fontFamily="@font/inter_semibold"-->
+        <!--            android:text="@{ngoData.expanded ? @string/see_less : @string/see_details}"-->
+        <!--            android:textColor="@color/black"-->
+        <!--            android:textSize="@dimen/_10sdp"-->
+        <!--            tools:ignore="TextSizeCheck,TouchTargetSizeCheck" />-->
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

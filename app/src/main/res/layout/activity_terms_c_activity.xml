@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".User_Package.user_Common_Screens.Terms_C_activity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@color/status_color"
+       android:padding="@dimen/_5sdp"
+       android:orientation="vertical">
+       <com.google.android.material.floatingactionbutton.FloatingActionButton
+           android:id="@+id/BTN_back"
+           android:layout_width="@dimen/_30sdp"
+           android:layout_height="@dimen/_30sdp"
+           android:layout_gravity="start"
+           android:layout_marginHorizontal="@dimen/_10sdp"
+           android:backgroundTint="@color/status_color"
+           android:src="@drawable/round_arrow_back_24"
+           app:fabCustomSize="@dimen/_30sdp"
+           app:fabSize="mini"
+           app:tint="@color/white"
+           tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+       <com.google.android.material.imageview.ShapeableImageView
+           android:layout_width="@dimen/_90sdp"
+           android:layout_height="@dimen/_90sdp"
+           android:layout_gravity="center"
+           android:layout_marginTop="@dimen/_10sdp"
+           android:elevation="@dimen/_10sdp"
+           app:strokeColor="#1765BF"
+           app:strokeWidth="@dimen/_2sdp"
+           android:outlineSpotShadowColor="@color/black"
+           android:background="@drawable/shadow_rec_white"
+           app:shapeAppearanceOverlay="@style/RoundedSquare"
+           app:srcCompat="@drawable/icon_app"/>
+
+       <com.google.android.material.imageview.ShapeableImageView
+           android:layout_width="@dimen/_90sdp"
+           android:layout_height="@dimen/_50sdp"
+           android:layout_gravity="bottom|center"
+           app:shapeAppearanceOverlay="@style/RoundedSquare"
+           app:srcCompat="@drawable/tathastu_word"
+           app:tint="@color/white" />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:fontFamily="@font/inter_semibold"
+           android:text="PLEASE, READ THESE TERMS &amp; CONDITIONS CAREFULLY :"
+           android:textColor="@color/white"
+           android:gravity="center"
+           android:textSize="@dimen/_17sdp" />
+
+   </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:orientation="vertical">
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_medium"
+                android:text="@string/terms_condition"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/toolbar_BG" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/kanit_regular"
+                    android:text=" Follow Us "
+                    android:textColor="@color/toolbar_BG" />
+
+                <View
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/toolbar_BG" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/BTN_tc_insta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/ic_instagram"
+                    app:elevation="@dimen/_3sdp"
+                    app:fabCustomSize="@dimen/_30sdp"
+                    app:maxImageSize="@dimen/_30sdp"
+                    app:tint="@null"
+                    app:tintMode="src_atop"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/BTN_tc_fb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_facebook"
+                    app:backgroundTint="@color/white"
+                    app:elevation="@dimen/_3sdp"
+                    app:fabCustomSize="@dimen/_30sdp"
+                    app:maxImageSize="@dimen/_30sdp"
+                    app:tint="@null"
+                    app:tintMode="src_atop"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/BTN_tc_twitter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/ic_twitter"
+                    app:elevation="@dimen/_3sdp"
+                    app:fabCustomSize="@dimen/_30sdp"
+                    app:maxImageSize="@dimen/_30sdp"
+                    app:tint="@null"
+                    app:tintMode="src_atop"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+
+
+            </LinearLayout>
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:gravity="center"
+                android:text="@string/copyright"
+                android:textSize="@dimen/_8sdp"
+                tools:ignore="TextSizeCheck" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

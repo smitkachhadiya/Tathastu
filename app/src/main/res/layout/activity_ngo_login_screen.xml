@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/toolbar_BG"
+    android:orientation="vertical"
+    tools:context=".NGO_Package.NGO_Entry.NGO_Login_Screen">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_60sdp"
+            android:fontFamily="@font/inter_semibold"
+            android:gravity="center"
+            android:text="NGO Login"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_26sdp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            tools:ignore="SpeakableTextPresentCheck">
+
+
+            <LinearLayout
+                android:id="@+id/login_parentlayout_ngo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_110sdp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        app:shapeAppearanceOverlay="@style/TopRoundedCorner" />
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginBottom="@dimen/_50sdp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="@dimen/_270sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|center"
+                            android:fontFamily="@font/kanit_medium"
+                            android:gravity="center"
+                            android:lineSpacingExtra="@dimen/_5sdp"
+                            android:text="Already Registered?"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_20sdp" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="@dimen/_270sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|center"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:fontFamily="@font/inter_regular"
+                            android:gravity="center"
+                            android:lineSpacingExtra="@dimen/_5sdp"
+                            android:text="Enter your registered mobile number"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            tools:ignore="TextSizeCheck" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/txtlayout_login_mno_ngo"
+                            android:layout_width="@dimen/_250sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_30sdp"
+                            android:hint="Enter Mobile Number"
+                            android:textColorHint="@color/status_color"
+                            app:boxBackgroundColor="@color/textField_Color"
+                            app:boxBackgroundMode="filled"
+                            app:boxStrokeColor="@color/toolbar_BG"
+                            app:boxStrokeErrorColor="@color/err_color"
+                            app:cursorColor="@color/black"
+                            app:cursorErrorColor="@color/err_color"
+                            app:hintEnabled="true"
+                            app:hintTextColor="@color/status_color"
+                            tools:ignore="HardcodedText">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/txt_Loginmno_ngo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif"
+                                android:inputType="phone"
+                                android:maxLength="10"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp"
+                                android:textStyle="bold" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/txtlayout_login_pwd_ngo"
+                            android:layout_width="@dimen/_250sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_7sdp"
+                            android:hint="Enter Password"
+                            android:textColorHint="@color/status_color"
+                            app:boxBackgroundColor="@color/textField_Color"
+                            app:boxBackgroundMode="filled"
+                            app:boxStrokeColor="@color/toolbar_BG"
+                            app:boxStrokeErrorColor="@color/err_color"
+                            app:cursorColor="@color/black"
+                            app:cursorErrorColor="@color/err_color"
+                            app:endIconMode="password_toggle"
+                            app:endIconTint="@color/status_color"
+                            app:hintEnabled="true"
+                            app:hintTextColor="@color/status_color"
+                            tools:ignore="HardcodedText">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/txt_login_pwd_ngo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif"
+                                android:inputType="textPassword"
+                                android:maxLength="12"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp"
+                                android:textStyle="bold" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="@dimen/_250sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="end"
+                            android:clickable="true"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:onClick="forgot_pwd_Screen"
+                            android:text="@string/forgot_pwd"
+                            android:textColor="@color/toolbar_BG"
+                            android:textColorLink="@color/toolbar_BG"
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="bold"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TextSizeCheck" />
+                        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                            android:id="@+id/BTN_login_ngo"
+                            android:layout_width="@dimen/_150sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_50sdp"
+                            android:backgroundTint="@color/toolbar_BG"
+                            android:gravity="center"
+                            android:text="Send OTP"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_17sdp"
+                            app:shapeAppearanceOverlay="@style/Circular"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_25sdp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/inter_regular"
+                                android:gravity="center"
+                                android:lineSpacingExtra="@dimen/_5sdp"
+                                android:text="Don't have an Account?  "
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_12sdp"
+                                tools:ignore="TextSizeCheck" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/BTN_login_signin_ngo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="@string/signin_in_LOGIN"
+                                android:textColor="@color/toolbar_BG"
+                                android:textColorLink="@color/toolbar_BG"
+                                android:textSize="@dimen/_15sdp"
+                                android:textStyle="bold"
+                                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TextSizeCheck" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginTop="@dimen/_50sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:text="@string/copyright"
+                        android:textSize="@dimen/_8sdp"
+                        tools:ignore="TextSizeCheck" />
+                </FrameLayout>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:gravity="start">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/donate_blood" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="#61000000"
+            />
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="@dimen/_270sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:fontFamily="@font/grandstander_medium"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/_10sdp"
+            android:shadowColor="@color/black"
+            android:shadowRadius="15"
+            android:text="A single drop of blood can make a huge difference"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_23sdp" />
+
+
+
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomProgressDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@android:color/white</item> <!-- Background color -->
+        <item name="android:textColorPrimary">@color/status_color</item>
+        <item name="android:progressTint">@color/status_color</item><!-- Text color -->
+        <!-- You can add more customizations here -->
+    </style>
+    <style name="CustomAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:textColorPrimary">@color/status_color</item>
+    </style>
+
+
+    <style name="ShapeAppearanceOverlay.App.CornerSize50Percent" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="ShapeAppearanceOverlay.App.CornerSize50Percent_about" parent="">
+        <item name="cornerSize">10%</item>
+        <item name="color">#FFEE5862</item>
+    </style>
+
+    <style name="CustomDatePickerStyle" parent="Theme.AppCompat.Light.Dialog">
+        <!-- Customize attributes here -->
+        <item name="android:datePickerStyle">@style/CustomDatePicker</item>
+    </style>
+
+    <style name="CustomDatePicker" parent="@android:style/Widget.Material.Light.DatePicker">
+        <!-- Customize DatePicker attributes here -->
+        <item name="android:headerBackground">@color/status_color</item>
+        <!-- Add more customizations as needed -->
+    </style>
+
+
+</resources>

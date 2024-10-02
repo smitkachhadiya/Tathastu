@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Admin_Package.Admin_DashBoard.Admin_DashBoard_Screen">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar_home"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/status_color"
+        app:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+        <!-- Left side logout icon -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/admin_BTN_dash_logout"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="start"
+            app:fabCustomSize="@dimen/_30sdp"
+            android:backgroundTint="@color/err_color"
+            android:src="@drawable/round_logout_24"
+            app:maxImageSize="@dimen/_17sdp"
+            app:fabSize="mini"
+            app:tint="@color/white"
+            android:layout_marginStart="@dimen/_15sdp"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"/>
+
+        <!-- Center title or other content -->
+
+        <!-- Right side rounded profile icon -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/admin_profile_icon"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:clickable="true"
+            android:contentDescription="@string/profile"
+            android:focusable="true"
+            android:onClick="onProfileClick"
+            android:padding="@dimen/_2sdp"
+            android:src="@drawable/round_account_circle_24"
+            app:shapeAppearanceOverlay="@style/Circular"
+            app:strokeColor="@color/white"
+            app:strokeWidth="1dp"
+            tools:ignore="TouchTargetSizeCheck" />
+    </com.google.android.material.appbar.MaterialToolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/_20sdp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/admin_card_dash_userData"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:cardElevation="@dimen/_5sdp"
+            app:cardMaxElevation="@dimen/_8sdp"
+            app:cardPreventCornerOverlap="false">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/img_dash_userData"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/dash_banner_1"
+                android:scaleType="fitCenter"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3"
+                android:orientation="horizontal">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    app:contentPadding="@dimen/_5sdp"
+                    app:srcCompat="@drawable/ic_user_data"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/kanit_regular"
+                    android:gravity="start|center"
+                    android:textStyle="bold"
+                    android:text="USERs' INFORMATION"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15sdp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/admin_card_dash_compaignData"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:cardElevation="@dimen/_5sdp"
+            app:cardMaxElevation="@dimen/_8sdp"
+            app:cardPreventCornerOverlap="false">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/img_dash_compaignData"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/dash_banner_2"
+                android:scaleType="fitCenter"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3"
+                android:orientation="horizontal">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    app:contentPadding="@dimen/_5sdp"
+                    android:tint="@color/textField_Color"
+                    app:srcCompat="@drawable/ic_camp_data"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/kanit_regular"
+                    android:gravity="start|center"
+                    android:textStyle="bold"
+                    android:text="DONATION CAMPs' INFORMATION"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15sdp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/admin_card_dash_feedbackData"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:cardElevation="@dimen/_5sdp"
+            app:cardMaxElevation="@dimen/_8sdp"
+            app:cardPreventCornerOverlap="false">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/img_dash_feedbackData"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/dash_banner_3"
+                android:scaleType="fitCenter"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3"
+                android:orientation="horizontal">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    app:contentPadding="@dimen/_5sdp"
+                    android:tint="@color/white"
+                    app:srcCompat="@drawable/baseline_feedback_24"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/kanit_regular"
+                    android:gravity="start|center"
+                    android:textStyle="bold"
+                    android:text="FEEDBACKS"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15sdp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/inter_semibold"
+            android:text="More"
+            android:textColor="@color/gray_font"
+            android:textSize="@dimen/_15sdp"
+            tools:ignore="TextSizeCheck" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:paddingHorizontal="@dimen/_50sdp"
+            android:rowCount="1"
+            tools:ignore="ExtraText,RedundantNamespace">
+            >
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:cardCornerRadius="@dimen/_6sdp"
+                    app:cardElevation="@dimen/_4sdp">
+
+                    <ImageButton
+                        android:id="@+id/admin_BTN_dash_aboutus"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:background="@color/white"
+                        android:outlineSpotShadowColor="@color/black"
+                        android:padding="@dimen/_5sdp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/about_us"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/kanit_regular"
+                    android:text="About us"
+                    android:textColor="@color/toolbar_BG_D"
+                    android:textSize="@dimen/_15sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:cardCornerRadius="@dimen/_6sdp"
+                    app:cardElevation="@dimen/_4sdp">
+
+                    <ImageButton
+                        android:id="@+id/admin_BTN_dash_contactus"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:background="@color/white"
+                        android:outlineSpotShadowColor="@color/black"
+                        android:padding="@dimen/_13sdp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/contact_us"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/kanit_regular"
+                    android:text="Contact us"
+                    android:textColor="@color/toolbar_BG_D"
+                    android:textSize="@dimen/_15sdp"
+                    tools:ignore="TextSizeCheck" />
+            </LinearLayout>
+
+
+        </GridLayout>
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:gravity="center"
+            android:text="@string/copyright"
+            android:textSize="@dimen/_8sdp"
+            tools:ignore="TextSizeCheck" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

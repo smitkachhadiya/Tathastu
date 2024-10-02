@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/toolbar_BG"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Common_Screens.Intro.Intro_Starting_Screen">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            tools:ignore="MissingClass,SpeakableTextPresentCheck" />
+
+        <LinearLayout
+            android:id="@+id/lineardot"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_180sdp"
+            android:gravity="center"
+            android:orientation="horizontal" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/BTN_intro_skip"
+            android:layout_width="@dimen/_52sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:backgroundTint="@color/white"
+            android:text="Skip"
+            android:textColor="@color/status_color"
+            android:textSize="@dimen/_10sdp"
+            app:shapeAppearanceOverlay="@style/Circular"
+            tools:ignore="SpeakableTextPresentCheck,TextSizeCheck,TouchTargetSizeCheck" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/BTN_intro_first"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/round_chevron_right_24"
+            android:tint="@color/status_color"
+            app:fabCustomSize="@dimen/_45sdp"
+            app:maxImageSize="@dimen/_30sdp"
+            app:shapeAppearanceOverlay="@style/RoundedSquare_BTN"
+            app:tint="@color/status_color"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/BTN_intro_get"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="@dimen/_35sdp"
+            android:backgroundTint="@color/white"
+            android:text="Get Started"
+            android:textColor="@color/status_color"
+            android:textSize="@dimen/_16sdp"
+            android:tint="@color/status_color"
+            app:fabCustomSize="@dimen/_50sdp"
+            app:icon="@drawable/baseline_keyboard_double_arrow_right_24"
+            app:iconSize="@dimen/_25sdp"
+            app:iconGravity="end"
+            app:iconTint="@color/status_color"
+            app:shapeAppearanceOverlay="@style/RoundedSquare_BTN"
+            app:tint="@color/status_color"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </FrameLayout>
+</LinearLayout>

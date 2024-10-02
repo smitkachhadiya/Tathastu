@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/toolbar_BG"
+    android:orientation="vertical"
+    tools:context=".Common_Screens.Selection_Screen">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/inter_semibold"
+            android:gravity="center"
+            android:text="Who are You??"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sdp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        app:shapeAppearanceOverlay="@style/TopRoundedCorner" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <GridLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:columnCount="2"
+                            android:rowCount="1"
+                            tools:ignore="ExtraText,RedundantNamespace">
+                            >
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/card_select_user"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/_10sdp"
+                                    android:outlineSpotShadowColor="@color/black"
+                                    app:cardCornerRadius="@dimen/_10sdp"
+                                    app:cardElevation="@dimen/_5sdp"
+                                    app:cardPreventCornerOverlap="false">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:background="@color/white">
+
+                                        <com.google.android.material.imageview.ShapeableImageView
+                                            android:layout_width="@dimen/_130sdp"
+                                            android:layout_height="@dimen/_130sdp"
+                                            android:layout_gravity="center"
+                                            app:shapeAppearanceOverlay="@style/RoundedSquare"
+                                            app:srcCompat="@drawable/ic_donor" />
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:background="@color/status_color"
+                                            android:orientation="vertical"
+                                            android:layout_gravity="center"
+                                            android:gravity="start"
+                                            android:paddingHorizontal="@dimen/_10sdp"
+                                            >
+                                            <com.google.android.material.textview.MaterialTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/kanit_medium"
+                                                android:text="DONOR"
+                                                android:textColor="@color/white"
+                                                android:textSize="@dimen/_15sdp" />
+                                            <View
+                                                android:layout_width="match_parent"
+                                                android:layout_height="@dimen/_2sdp"
+                                                android:background="@color/white"
+                                                />
+
+                                            <com.google.android.material.textview.MaterialTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/inter_medium"
+                                                android:text="Who selflessly contributes to make a positive impact or help others in need."
+                                                android:textColor="@color/white"
+                                                android:textSize="@dimen/_10sdp"
+                                                android:layout_marginBottom="@dimen/_10sdp"
+                                                tools:ignore="TextSizeCheck" />
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_columnWeight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/card_select_admin"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/_10sdp"
+                                    android:outlineSpotShadowColor="@color/black"
+                                    app:cardCornerRadius="@dimen/_10sdp"
+                                    app:cardElevation="@dimen/_5sdp"
+                                    app:cardPreventCornerOverlap="false">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:background="@color/white"
+                                        android:paddingVertical="@dimen/_5sdp">
+
+                                        <com.google.android.material.imageview.ShapeableImageView
+                                            android:layout_width="@dimen/_100sdp"
+                                            android:layout_height="@dimen/_100sdp"
+                                            android:layout_gravity="center"
+                                            android:background="@drawable/shadow_rec_white"
+                                            app:shapeAppearanceOverlay="@style/RoundedSquare"
+                                            app:srcCompat="@drawable/ic_admin" />
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical"
+                                            android:layout_gravity="center"
+                                            android:gravity="start"
+                                            android:padding="@dimen/_10sdp"
+                                            >
+                                            <com.google.android.material.textview.MaterialTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/kanit_medium"
+                                                android:text="ADMINISTRATIVE"
+                                                android:textColor="@color/status_color"
+                                                android:textSize="@dimen/_13sdp" />
+                                            <View
+                                                android:layout_width="match_parent"
+                                                android:layout_height="@dimen/_1sdp"
+                                                android:background="@color/status_color"
+                                                />
+                                            <com.google.android.material.textview.MaterialTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/inter_medium"
+                                                android:text="Who handling and organizing essential tasks for smooth operation."
+                                                android:textColor="@color/toolbar_BG_D"
+                                                android:textSize="@dimen/_8sdp"
+                                                tools:ignore="TextSizeCheck" />
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+                            </LinearLayout>
+
+                        </GridLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            >
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/card_select_ngo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginBottom="@dimen/_10sdp"
+                                android:layout_marginHorizontal="@dimen/_20sdp"
+                                android:outlineSpotShadowColor="@color/black"
+                                app:cardCornerRadius="@dimen/_10sdp"
+                                app:cardElevation="@dimen/_5sdp"
+                                app:cardPreventCornerOverlap="false">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:background="@color/white"
+                                    >
+
+                                    <com.google.android.material.imageview.ShapeableImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_90sdp"
+                                        android:scaleType="fitXY"
+                                        android:layout_gravity="center"
+                                        android:background="@drawable/shadow_rec_white"
+                                        app:shapeAppearanceOverlay="@style/RoundedSquare"
+                                        app:srcCompat="@drawable/ic_ngo" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:layout_gravity="center"
+                                        android:gravity="start"
+                                        android:background="@color/status_color"
+                                        android:padding="@dimen/_10sdp"
+                                        >
+                                        <com.google.android.material.textview.MaterialTextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/kanit_medium"
+                                            android:text="NGO - Non-Governmental Organization."
+                                            android:textColor="@color/white"
+                                            android:textSize="@dimen/_13sdp" />
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/_2sdp"
+                                            android:background="@color/white"
+                                            />
+
+                                        <com.google.android.material.textview.MaterialTextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/inter_medium"
+                                            android:text="Who Dedicated to positive impact, social welfare, and community well-being."
+                                            android:textColor="@color/white"
+                                            android:textSize="@dimen/_10sdp"
+                                            tools:ignore="TextSizeCheck" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginTop="@dimen/_50sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:text="Copyright © 2024 Threes Infotech. \nAll rights reserved."
+                        android:textSize="@dimen/_8sdp"
+                        tools:ignore="TextSizeCheck" />
+                </FrameLayout>
+
+</LinearLayout>

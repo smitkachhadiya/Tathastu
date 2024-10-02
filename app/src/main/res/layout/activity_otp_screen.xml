@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/toolbar_BG"
+    android:orientation="vertical"
+    tools:context=".User_Package.user_Entry.Otp_Screen">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:fontFamily="@font/inter_semibold"
+            android:gravity="center"
+            android:text="Verify OTP"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_25sdp" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/BTN_back"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="start"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:backgroundTint="@color/status_color"
+            android:src="@drawable/round_arrow_back_24"
+            app:fabCustomSize="@dimen/_30sdp"
+            app:fabSize="mini"
+            app:tint="@color/white"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            tools:ignore="SpeakableTextPresentCheck">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_90sdp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        app:shapeAppearanceOverlay="@style/TopRoundedCorner" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="@dimen/_270sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|center"
+                            android:fontFamily="@font/kanit_regular"
+                            android:gravity="center"
+                            android:text="We sent an OTP on your registered \nEmail Address"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_15sdp" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/txt_otp_mno"
+                            android:layout_width="@dimen/_270sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|center"
+                            android:fontFamily="@font/inter_semibold"
+                            android:gravity="center"
+                            android:lineSpacingExtra="@dimen/_5sdp"
+                            android:text="+91 XXXXXX2123"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="@dimen/_270sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|center"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:fontFamily="@font/inter_regular"
+                            android:gravity="left"
+                            android:lineSpacingExtra="@dimen/_5sdp"
+                            android:text="Enter an OTP :"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            tools:ignore="TextSizeCheck" />
+
+                        <!--                      For OTP-->
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_270sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_3sdp"
+                                android:layout_weight="1"
+                                android:textColorHint="@color/status_color"
+                                app:boxBackgroundColor="@color/textField_Color"
+                                app:boxBackgroundMode="filled"
+                                app:boxStrokeColor="@color/toolbar_BG"
+                                app:boxStrokeErrorColor="@color/err_color"
+                                app:cursorColor="@color/black"
+                                app:cursorErrorColor="@color/err_color"
+                                app:hintEnabled="true"
+                                app:counterEnabled="true"
+                                app:counterMaxLength="6"
+                                app:counterTextColor="@color/status_color"
+                                app:hintTextColor="@color/status_color"
+                                tools:ignore="HardcodedText">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/txt_OTP"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:focusable="true"
+                                    android:fontFamily="@font/inter_semibold"
+                                    android:inputType="number"
+                                    android:maxLength="6"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_15sdp"
+                                    tools:ignore="SpeakableTextPresentCheck" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+                        </LinearLayout>
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:layout_marginTop="@dimen/_15sdp"-->
+<!--                            android:gravity="center"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <com.google.android.material.textview.MaterialTextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:fontFamily="@font/inter_regular"-->
+<!--                                android:text="valid for : "-->
+<!--                                android:textColor="@color/black"-->
+<!--                                android:textSize="@dimen/_12sdp"-->
+<!--                                tools:ignore="TextSizeCheck" />-->
+
+<!--                            <com.google.android.material.textview.MaterialTextView-->
+<!--                                android:id="@+id/tv_OTPtime"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:fontFamily="@font/inter_regular"-->
+<!--                                android:text="00:00"-->
+<!--                                android:textColor="@color/status_color"-->
+<!--                                android:textSize="@dimen/_14sdp"-->
+<!--                                tools:ignore="TextSizeCheck" />-->
+
+<!--                        </LinearLayout>-->
+
+
+                        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                            android:id="@+id/BTN_otp"
+                            android:layout_width="@dimen/_180sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_30sdp"
+                            android:layout_marginBottom="@dimen/_60sdp"
+                            android:backgroundTint="@color/toolbar_BG"
+                            android:gravity="center"
+                            android:text="Submit OTP"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_15sdp"
+                            app:shapeAppearanceOverlay="@style/Circular"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+                    </LinearLayout>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginTop="@dimen/_50sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:text="@string/copyright"
+                        android:textSize="@dimen/_8sdp"
+                        tools:ignore="TextSizeCheck" />
+
+                </FrameLayout>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_15sdp"
+    android:background="@drawable/boarder"
+    app:cardCornerRadius="@dimen/_20sdp"
+    app:cardElevation="@dimen/_5sdp"
+    app:cardMaxElevation="@dimen/_8sdp"
+    app:cardPreventCornerOverlap="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="@dimen/_5sdp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:drawableStart="@drawable/b_person"
+                android:drawablePadding="@dimen/_10sdp"
+                android:fontFamily="@font/inter_semibold"
+                android:gravity="start"
+                android:maxLines="2"
+                android:text="Meet Koshiya"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="@dimen/_15sdp"
+                app:autoSizeMinTextSize="8sp"
+                app:autoSizeTextType="uniform"
+                app:drawableTint="@color/food_donation"
+                tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="3"
+                android:layout_gravity="start">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/inter_semibold"
+                    android:gravity="start"
+                    android:drawableStart="@drawable/b_food"
+                    android:drawablePadding="@dimen/_10sdp"
+                    app:drawableTint="@color/food_donation"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:maxLines="2"
+                    android:text="Wheat flour"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    app:autoSizeMaxTextSize="@dimen/_15sdp"
+                    app:autoSizeMinTextSize="8sp"
+                    app:autoSizeTextType="uniform"
+                    tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_mno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:fontFamily="@font/inter_semibold"
+                    android:gravity="start"
+                    android:drawableStart="@drawable/round_phone_24"
+                    android:drawablePadding="@dimen/_10sdp"
+                    app:drawableTint="@color/food_donation"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:maxLines="2"
+                    android:text="1-800-662-4357"
+                    android:autoLink="phone"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    app:autoSizeMaxTextSize="@dimen/_15sdp"
+                    app:autoSizeMinTextSize="8sp"
+                    app:autoSizeTextType="uniform"
+                    android:textColorLink="@color/food_donation"
+                    tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/inter_semibold"
+                    android:gravity="start"
+                    android:drawableStart="@drawable/b_location"
+                    android:drawablePadding="@dimen/_10sdp"
+                    app:drawableTint="@color/food_donation"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:maxLines="2"
+                    android:text="Katargam"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    app:autoSizeMaxTextSize="@dimen/_15sdp"
+                    app:autoSizeMinTextSize="8sp"
+                    app:autoSizeTextType="uniform"
+                    tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:orientation="vertical"
+                android:layout_weight="0">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/BTN_edit"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:backgroundTint="@color/food_donation"
+                    android:src="@drawable/b_edit"
+                    app:fabCustomSize="@dimen/_30sdp"
+                    app:fabSize="mini"
+                    app:tint="@color/white"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/BTN_delete"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:backgroundTint="@color/food_donation"
+                    android:src="@drawable/b_delete"
+                    app:fabCustomSize="@dimen/_30sdp"
+                    app:fabSize="mini"
+                    app:tint="@color/white"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
