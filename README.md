@@ -13,10 +13,6 @@
 - [🛠 Tech Stack](#tech-stack)
 - [⚙️ Requirements](#requirements)
 - [📂 Project Structure](#project-structure)
-- [🔍 Workflow](#workflow)
-- [✅ Advantages](#advantages)
-- [⚠️ Limitations](#limitations)
-- [🚀 Future Enhancements](#future-enhancements)
 - [📜 References](#references)
 
 ---
@@ -85,61 +81,24 @@ With **matching algorithms**, **secure transactions**, and **user-friendly desig
 
 TATHASTU/
 
-├── admin/ # Admin-specific code
+├── app
+    
+    ├── src / main / java / 
+    
+      ├── Admin_Package/ # Admin-specific code
 
-├── donor/ # Donor panel features
+      ├── User_Package/ # Donor panel features
 
-├── ngo/ # NGO panel features
+      ├── NGO_Package/ # NGO panel features
 
-├── resources/ # Assets, layouts, images
+      ├── resources/ # Assets, layouts, images
 
-├── common/ # Shared utilities
+      ├── Common_Screens/ # Shared utilities
 
 ├── gradle/ # Build scripts
 
 └── README.md # Project documentation
 
-
----
-
-## 🔍 Workflow
-1. **User Authentication** → Donors & NGOs register via OTP verification.  
-2. **Profile Setup** → Maintain personal/organizational profiles.  
-3. **Donation & Event Management** → Donors create requests, NGOs manage events & camps.  
-4. **Communication & Matching** → Real-time donor-NGO interaction with notifications.  
-5. **Transaction & History Tracking** → Razorpay payment integration with full donation logs.  
-6. **Admin Monitoring** → Admin oversees platform operations and compliance.
-
----
-
-## ✅ Advantages
-- **Convenience** → Easy profile management & donation creation
-- **Security** → OTP verification & data protection
-- **Transparency** → View NGO details, events, and donation history
-- **Engagement** → Participate in campaigns and volunteer activities
-- **Community Building** → Direct donor-NGO communication
-- **Impact Tracking** → See real-world results of donations
-
----
-
-## ⚠️ Limitations
-- No Aadhaar verification for volunteers
-- Limited offline functionality
-- Internet dependency
-- Limited multilingual support
-- Reliance on third-party services (Firebase, Razorpay)
-
----
-
-## 🚀 Future Enhancements
-- NGO collaboration tools
-- Volunteer certificates
-- Data analytics for targeted campaigns
-- Real-time impact updates
-- Social media integration
-- Expanded geographic reach
-- Multilingual & accessibility support
-- Advanced security protocols
 
 ---
 
