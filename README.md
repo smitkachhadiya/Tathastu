@@ -82,6 +82,7 @@ With **matching algorithms**, **secure transactions**, and **user-friendly desig
 ---
 
 ## 📂 Project Structure
+
 TATHASTU/
 
 ├── admin/ # Admin-specific code
@@ -97,6 +98,7 @@ TATHASTU/
 ├── gradle/ # Build scripts
 
 └── README.md # Project documentation
+
 
 ---
 
@@ -148,4 +150,3 @@ TATHASTU/
 - [Volley Library](https://www.geeksforgeeks.org/volley-library-in-android/)  
 - [Firebase](https://firebase.google.com)  
 - [Razorpay](https://razorpay.com)  
-
